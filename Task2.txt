@@ -1,0 +1,161 @@
+#2 - Linux WiFi adapter in Monitor mode
+1. Switch the Wi-Fi adapter to Monitor mode.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo ip link set wlan0 down                  
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ sudo iw dev wlan0 set type monitor        
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ sudo ip link set wlan0 up            
+
+2. Figure out which Wi-Fi channel is used by the Wi-Fi AP.
+
+From task 1.6 :
+
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_cli scan_results
+Selected interface 'wlan0'
+bssid / frequency / signal level / flags / ssid
+56:db:a2:58:dd:61       5240    -49     [WPA2-PSK+SAE-CCMP][WPS][ESS][FILS]     DiscoSuperStar5G
+54:db:a2:58:dd:61       2412    -38     [WPA2-PSK-CCMP][WPS][ESS][FILS] DiscoSuperStar
+56:db:a2:18:dd:61       2412    -38     [WPA2-SAE-CCMP][ESS][FILS]      gl_wpa3
+
+
+3. Configure the same channel on the Wi-Fi adapter.
+
+
+┌──(kali㉿kali)-[~]
+└─$ iwlist wlan0 channel
+wlan0     32 channels in total; available frequencies :
+          Channel 01 : 2.412 GHz
+          Channel 02 : 2.417 GHz
+          Channel 03 : 2.422 GHz
+          Channel 04 : 2.427 GHz
+          Channel 05 : 2.432 GHz
+          Channel 06 : 2.437 GHz
+          Channel 07 : 2.442 GHz
+          Channel 08 : 2.447 GHz
+          Channel 09 : 2.452 GHz
+          Channel 10 : 2.457 GHz
+          Channel 11 : 2.462 GHz
+          Channel 12 : 2.467 GHz
+          Channel 13 : 2.472 GHz
+          Channel 36 : 5.18 GHz
+          Channel 40 : 5.2 GHz
+          Channel 44 : 5.22 GHz
+          Channel 48 : 5.24 GHz
+          Channel 52 : 5.26 GHz
+          Channel 56 : 5.28 GHz
+          Channel 60 : 5.3 GHz
+          Channel 64 : 5.32 GHz
+          Channel 100 : 5.5 GHz
+          Channel 104 : 5.52 GHz
+          Channel 108 : 5.54 GHz
+          Channel 112 : 5.56 GHz
+          Channel 116 : 5.58 GHz
+          Channel 120 : 5.6 GHz
+          Channel 124 : 5.62 GHz
+          Channel 128 : 5.64 GHz
+          Channel 132 : 5.66 GHz
+          Channel 136 : 5.68 GHz
+          Channel 140 : 5.7 GHz
+          Current Frequency:2.422 GHz (Channel 3)
+                                                                         
+┌──(kali㉿kali)-[~]
+└─$ sudo iw dev wlan0 set freq 2412
+                                                                                                                     
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ iw dev                         
+phy#0
+        Interface wlan0
+                ifindex 3
+                wdev 0x1
+                addr f0:77:c3:04:ce:fa
+                type monitor
+                channel 1 (2412 MHz), width: 20 MHz (no HT), center1: 2412 MHz
+                multicast TXQ:
+                        qsz-byt qsz-pkt flows   drops   marks   overlmt hashcol tx-bytes        tx-packets
+                        0       0       0       0       0       0       0       0               0
+
+
+or
+
+┌──(kali㉿kali)-[~]
+└─$ sudo iw dev wlan0 set channel 01
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ iw dev                          
+phy#0
+        Interface wlan0
+                ifindex 3
+                wdev 0x1
+                addr f0:77:c3:04:ce:fa
+                type monitor
+                channel 1 (2412 MHz), width: 20 MHz (no HT), center1: 2412 MHz
+                multicast TXQ:
+                        qsz-byt qsz-pkt flows   drops   marks   overlmt hashcol tx-bytes        tx-packets
+                        0       0       0       0       0       0       0       0               0
+
+4. Start Wi-Fi sniffing.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo tcpdump -i wlan0 -w capture.pcap
+tcpdump: listening on wlan0, link-type IEEE802_11_RADIO (802.11 plus radiotap header), snapshot length 262144 bytes
+                                                         
+5. Wait for 20 seconds.
+
+I waited for 20 seconds.
+
+6. Stop Wi-Fi sniffing.
+
+ctrl+c
+
+┌──(kali㉿kali)-[~]
+└─$ sudo tcpdump -i wlan0 -w capture.pcap
+tcpdump: listening on wlan0, link-type IEEE802_11_RADIO (802.11 plus radiotap header), snapshot length 262144 bytes
+^C1135 packets captured
+1158 packets received by filter
+0 packets dropped by kernel
+
+7. Open the Wi-Fi capture in Wireshark and filter Wi-Fi AP Beacons. Save the Wi-Fi capture.
+
+Set filter in Wireshark:
+wlan.fc.type_subtype == 0x08
+
+8. Start Wi-Fi sniffing.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo tcpdump -i wlan0 -w capture_client.pcap
+
+9. Connect the Wi-Fi client to the Wi-Fi AP.
+
+I connected my phone to the Wi-Fi AP SSID "DiscoSuperStar"
+
+10. Access the “http://info.cern.ch/” page on the Wi-Fi client.
+
+I opened the URL “http://info.cern.ch/” page on the Wi-Fi client
+
+11. Stop Wi-Fi sniffing.
+
+ctrl+c
+
+12. Open the Wi-Fi capture in Wireshark and filter only data that belongs to this particular Wi-Fi client.
+
+My phone has mac address d4:3a:2c:5d:16:47
+
+Set filter in Wireshark: 
+wlan.addr ==d4:3a:2c:5d:16:47
+
+13. Decrypt the capture to see DNS (resolving of “info.cern.ch”) and HTTP data. Save the Wi-Fi capture.
+
+Edit → Preferences → Protocols → IEEE 802.11 → Decryption Keys
+
+wpa-pwd iron23@#:DiscoSuperStar
+
+Set filter in Wireshark: 
+wlan.addr ==d4:3a:2c:5d:16:47 and dns or http
+
+14. Save the results for each point list to the log file and share it with the recruiter.

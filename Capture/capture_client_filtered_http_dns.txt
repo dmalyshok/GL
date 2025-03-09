@@ -1,0 +1,743 @@
+No.     Time           Source                Destination           Protocol Length Info
+   1843 11.661151      192.168.34.12         192.168.34.1          DNS      170    Standard query 0x3069 A www.google.com
+
+Frame 1843: 170 bytes on wire (1360 bits), 170 bytes captured (1360 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 48386, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1845 11.671092      192.168.34.1          192.168.34.12         DNS      202    Standard query response 0x3069 A www.google.com A 142.250.186.196
+
+Frame 1845: 202 bytes on wire (1616 bits), 202 bytes captured (1616 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 48386
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1846 11.671207      192.168.34.1          192.168.34.12         DNS      202    Standard query response 0x3069 A www.google.com A 142.250.186.196
+
+Frame 1846: 202 bytes on wire (1616 bits), 202 bytes captured (1616 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p..R.F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 48386
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1847 11.671587      192.168.34.1          192.168.34.12         DNS      202    Standard query response 0x3069 A www.google.com A 142.250.186.196
+
+Frame 1847: 202 bytes on wire (1616 bits), 202 bytes captured (1616 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p..R.F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 48386
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1848 11.671630      192.168.34.1          192.168.34.12         DNS      202    Standard query response 0x3069 A www.google.com A 142.250.186.196
+
+Frame 1848: 202 bytes on wire (1616 bits), 202 bytes captured (1616 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p..R.F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 48386
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1852 11.675616      192.168.34.12         192.168.34.1          DNS      185    Standard query 0x56b9 A connectivitycheck.gstatic.com
+
+Frame 1852: 185 bytes on wire (1480 bits), 185 bytes captured (1480 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 55071, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1854 11.687076      192.168.34.1          192.168.34.12         DNS      217    Standard query response 0x56b9 A connectivitycheck.gstatic.com A 142.250.186.195
+
+Frame 1854: 217 bytes on wire (1736 bits), 217 bytes captured (1736 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 55071
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1892 11.710877      192.168.34.12         142.250.186.195       HTTP     409    GET /generate_204 HTTP/1.1 
+
+Frame 1892: 409 bytes on wire (3272 bits), 409 bytes captured (3272 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: op.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 142.250.186.195
+Transmission Control Protocol, Src Port: 37310, Dst Port: 80, Seq: 1, Ack: 1, Len: 227
+Hypertext Transfer Protocol
+    GET /generate_204 HTTP/1.1\r\n
+    Connection: close\r\n
+    User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36\r\n
+    Host: connectivitycheck.gstatic.com\r\n
+    Accept-Encoding: gzip\r\n
+    \r\n
+    [Response in frame: 1900]
+    [Full request URI: http://connectivitycheck.gstatic.com/generate_204]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1900 11.724554      142.250.186.195       192.168.34.12         HTTP     324    HTTP/1.1 204 No Content 
+
+Frame 1900: 324 bytes on wire (2592 bits), 324 bytes captured (2592 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 142.250.186.195, Dst: 192.168.34.12
+Transmission Control Protocol, Src Port: 80, Dst Port: 37310, Seq: 1, Ack: 228, Len: 146
+Hypertext Transfer Protocol
+    HTTP/1.1 204 No Content\r\n
+    Content-Length: 0\r\n
+    Cross-Origin-Resource-Policy: cross-origin\r\n
+    Date: Sat, 08 Mar 2025 14:10:02 GMT\r\n
+    Connection: close\r\n
+    \r\n
+    [Request in frame: 1892]
+    [Time since request: 0.013677000 seconds]
+    [Request URI: /generate_204]
+    [Full request URI: http://connectivitycheck.gstatic.com/generate_204]
+
+No.     Time           Source                Destination           Protocol Length Info
+   1955 11.807819      192.168.34.12         192.168.34.1          DNS      172    Standard query 0x5869 A mtalk.google.com
+
+Frame 1955: 172 bytes on wire (1376 bits), 172 bytes captured (1376 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 60431, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+   3947 23.379682      192.168.34.12         192.168.34.1          DNS      174    Standard query 0x4a57 A www.googleapis.com
+
+Frame 3947: 174 bytes on wire (1392 bits), 174 bytes captured (1392 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 20442, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+   3950 23.389864      192.168.34.1          192.168.34.12         DNS      350    Standard query response 0x4a57 A www.googleapis.com A 172.217.16.42 A 172.217.16.10 A 216.58.209.10 A 142.250.203.138 A 142.250.203.202 A 216.58.215.74 A 142.250.75.10 A 142.250.186.202 A 216.58.208.202 A 216.58.215.106
+
+Frame 3950: 350 bytes on wire (2800 bits), 350 bytes captured (2800 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 20442
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+   4401 25.507444      192.168.34.12         192.168.34.1          DNS      185    Standard query 0x869c A playgateway-pa.googleapis.com
+
+Frame 4401: 185 bytes on wire (1480 bits), 185 bytes captured (1480 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 54099, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+   4409 25.517746      192.168.34.1          192.168.34.12         DNS      345    Standard query response 0x869c A playgateway-pa.googleapis.com A 216.58.209.10 A 142.250.203.202 A 142.250.186.202 A 172.217.16.10 A 172.217.16.42 A 216.58.215.74 A 142.250.75.10 A 216.58.208.202 A 142.250.203.138
+
+Frame 4409: 345 bytes on wire (2760 bits), 345 bytes captured (2760 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 54099
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+   7542 49.129837      192.168.34.12         192.168.34.1          DNS      172    Standard query 0xfebe A post.tio2.com.ua
+
+Frame 7542: 172 bytes on wire (1376 bits), 172 bytes captured (1376 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 41148, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+   7546 49.141868      192.168.34.1          192.168.34.12         DNS      204    Standard query response 0xfebe A post.tio2.com.ua A 185.168.128.226
+
+Frame 7546: 204 bytes on wire (1632 bits), 204 bytes captured (1632 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 41148
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  16783 129.462476     192.168.34.12         192.168.34.1          DNS      185    Standard query 0x3144 A connectivitycheck.gstatic.com
+
+Frame 16783: 185 bytes on wire (1480 bits), 185 bytes captured (1480 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 10050, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  16789 129.492285     192.168.34.1          192.168.34.12         DNS      217    Standard query response 0x3144 A connectivitycheck.gstatic.com A 142.250.186.195
+
+Frame 16789: 217 bytes on wire (1736 bits), 217 bytes captured (1736 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 10050
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  16795 129.538947     192.168.34.12         192.168.34.1          DNS      170    Standard query 0xc381 A www.google.com
+
+Frame 16795: 170 bytes on wire (1360 bits), 170 bytes captured (1360 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 60489, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  16797 129.550237     192.168.34.1          192.168.34.12         DNS      202    Standard query response 0xc381 A www.google.com A 142.250.186.196
+
+Frame 16797: 202 bytes on wire (1616 bits), 202 bytes captured (1616 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 60489
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  16819 129.567891     192.168.34.12         142.250.186.195       HTTP     409    GET /generate_204 HTTP/1.1 
+
+Frame 16819: 409 bytes on wire (3272 bits), 409 bytes captured (3272 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: op.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 142.250.186.195
+Transmission Control Protocol, Src Port: 44302, Dst Port: 80, Seq: 1, Ack: 1, Len: 227
+Hypertext Transfer Protocol
+    GET /generate_204 HTTP/1.1\r\n
+    Connection: close\r\n
+    User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36\r\n
+    Host: connectivitycheck.gstatic.com\r\n
+    Accept-Encoding: gzip\r\n
+    \r\n
+    [Response in frame: 16821]
+    [Full request URI: http://connectivitycheck.gstatic.com/generate_204]
+
+No.     Time           Source                Destination           Protocol Length Info
+  16821 129.576155     142.250.186.195       192.168.34.12         HTTP     498    HTTP/1.1 204 No Content 
+
+Frame 16821: 498 bytes on wire (3984 bits), 498 bytes captured (3984 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+IEEE 802.11 Aggregate MSDU
+    A-MSDU Subframe #1
+        Destination address: 88:42:24:00:d4:3a (88:42:24:00:d4:3a)
+        Source address: 2c:5d:16:47:54:db (2c:5d:16:47:54:db)
+        A-MSDU Length: 68
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 142.250.186.196, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 443, Dst Port: 33390, Seq: 0, Ack: 1, Len: 0
+        A-MSDU Padding: 0000
+    A-MSDU Subframe #2
+        Destination address: 62:b3:c7:90:e0:94 (62:b3:c7:90:e0:94)
+        Source address: 95:78:39:1c:2b:9a (95:78:39:1c:2b:9a)
+        A-MSDU Length: 60
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 142.250.186.195, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 44302, Seq: 1, Ack: 228, Len: 0
+        A-MSDU Padding: 0000
+    A-MSDU Subframe #3
+        Destination address: 1e:fd:d7:56:de:12 (1e:fd:d7:56:de:12)
+        Source address: 9f:36:d1:e1:7d:55 (9f:36:d1:e1:7d:55)
+        A-MSDU Length: 206
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 142.250.186.195, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 44302, Seq: 1, Ack: 228, Len: 146
+        Hypertext Transfer Protocol
+            HTTP/1.1 204 No Content\r\n
+            Content-Length: 0\r\n
+            Cross-Origin-Resource-Policy: cross-origin\r\n
+            Date: Sat, 08 Mar 2025 14:12:00 GMT\r\n
+            Connection: close\r\n
+            \r\n
+            [Request in frame: 16819]
+            [Time since request: 0.008264000 seconds]
+            [Request URI: /generate_204]
+            [Full request URI: http://connectivitycheck.gstatic.com/generate_204]
+
+No.     Time           Source                Destination           Protocol Length Info
+  17280 133.773242     192.168.34.12         192.168.34.1          DNS      198    Standard query 0x4226 A epdg.epc.mnc002.mcc260.pub.3gppnetwork.org
+
+Frame 17280: 198 bytes on wire (1584 bits), 198 bytes captured (1584 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 62560, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  17282 133.785882     192.168.34.1          192.168.34.12         DNS      262    Standard query response 0x4226 A epdg.epc.mnc002.mcc260.pub.3gppnetwork.org A 178.182.200.31 A 178.182.200.131 A 178.182.201.31
+
+Frame 17282: 262 bytes on wire (2096 bits), 262 bytes captured (2096 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 62560
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  18409 142.149161     192.168.34.12         192.168.34.1          DNS      168    Standard query 0x5279 A info.cern.ch
+
+Frame 18409: 168 bytes on wire (1344 bits), 168 bytes captured (1344 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 52666, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  18411 142.150939     192.168.34.12         192.168.34.1          DNS      168    Standard query 0x5fde AAAA info.cern.ch
+
+Frame 18411: 168 bytes on wire (1344 bits), 168 bytes captured (1344 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 22521, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  18413 142.160787     192.168.34.1          192.168.34.12         DNS      224    Standard query response 0x5279 A info.cern.ch CNAME webafs902.cern.ch A 188.184.67.127
+
+Frame 18413: 224 bytes on wire (1792 bits), 224 bytes captured (1792 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 52666
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  18415 142.161161     192.168.34.1          192.168.34.12         DNS      236    Standard query response 0x5fde AAAA info.cern.ch CNAME webafs902.cern.ch AAAA 2001:1458:201:a4::100:1a0
+
+Frame 18415: 236 bytes on wire (1888 bits), 236 bytes captured (1888 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 22521
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  18458 142.296016     192.168.34.12         188.184.67.127        HTTP     246    GET / HTTP/1.1 
+
+Frame 18458: 246 bytes on wire (1968 bits), 246 bytes captured (1968 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: op.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 188.184.67.127
+Transmission Control Protocol, Src Port: 51412, Dst Port: 80, Seq: 1, Ack: 1, Len: 76
+Hypertext Transfer Protocol
+    GET / HTTP/1.1\r\n
+    Host: info.cern.ch\r\n
+    User-Agent: curl/8.11.1\r\n
+    Accept: */*\r\n
+    \r\n
+    [Response in frame: 18480]
+    [Full request URI: http://info.cern.ch/]
+
+No.     Time           Source                Destination           Protocol Length Info
+  18480 142.350632     188.184.67.127        192.168.34.12         TCP      1120   HTTP/1.1 200 OK  (text/html)80 → 51412 [FIN, ACK] Seq=879 Ack=77 Win=32044 Len=0
+
+Frame 18480: 1120 bytes on wire (8960 bits), 1120 bytes captured (8960 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+IEEE 802.11 Aggregate MSDU
+    A-MSDU Subframe #1
+        Destination address: 88:42:24:00:d4:3a (88:42:24:00:d4:3a)
+        Source address: 2c:5d:16:47:54:db (2c:5d:16:47:54:db)
+        A-MSDU Length: 926
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 188.184.67.127, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 51412, Seq: 1, Ack: 77, Len: 878
+        Hypertext Transfer Protocol
+            HTTP/1.1 200 OK\r\n
+            Date: Sat, 08 Mar 2025 14:12:13 GMT\r\n
+            Server: Apache\r\n
+            Last-Modified: Wed, 05 Feb 2014 16:00:31 GMT\r\n
+            ETag: "286-4f1aadb3105c0"\r\n
+            Accept-Ranges: bytes\r\n
+            Content-Length: 646\r\n
+            Connection: close\r\n
+            Content-Type: text/html\r\n
+            \r\n
+            [Request in frame: 18458]
+            [Time since request: 0.054616000 seconds]
+            [Request URI: /]
+            [Full request URI: http://info.cern.ch/]
+            File Data: 646 bytes
+        Line-based text data: text/html (13 lines)
+    A-MSDU Subframe #2
+        Destination address: 99:a9:26:22:32:c8 (99:a9:26:22:32:c8)
+        Source address: 44:11:6e:09:07:51 (44:11:6e:09:07:51)
+        A-MSDU Length: 48
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 188.184.67.127, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 51412, Seq: 879, Ack: 77, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  20916 154.617310     192.168.34.12         188.184.67.127        HTTP     246    GET / HTTP/1.1 
+
+Frame 20916: 246 bytes on wire (1968 bits), 246 bytes captured (1968 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: op.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 188.184.67.127
+Transmission Control Protocol, Src Port: 55650, Dst Port: 80, Seq: 1, Ack: 1, Len: 76
+Hypertext Transfer Protocol
+    GET / HTTP/1.1\r\n
+    Host: info.cern.ch\r\n
+    User-Agent: curl/8.11.1\r\n
+    Accept: */*\r\n
+    \r\n
+    [Response in frame: 20975]
+    [Full request URI: http://info.cern.ch/]
+
+No.     Time           Source                Destination           Protocol Length Info
+  20975 154.696545     188.184.67.127        192.168.34.12         TCP      1120   HTTP/1.1 200 OK  (text/html)80 → 55650 [FIN, ACK] Seq=879 Ack=77 Win=32044 Len=0
+
+Frame 20975: 1120 bytes on wire (8960 bits), 1120 bytes captured (8960 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+IEEE 802.11 Aggregate MSDU
+    A-MSDU Subframe #1
+        Destination address: 88:42:24:00:d4:3a (88:42:24:00:d4:3a)
+        Source address: 2c:5d:16:47:54:db (2c:5d:16:47:54:db)
+        A-MSDU Length: 926
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 188.184.67.127, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 55650, Seq: 1, Ack: 77, Len: 878
+        Hypertext Transfer Protocol
+            HTTP/1.1 200 OK\r\n
+            Date: Sat, 08 Mar 2025 14:12:25 GMT\r\n
+            Server: Apache\r\n
+            Last-Modified: Wed, 05 Feb 2014 16:00:31 GMT\r\n
+            ETag: "286-4f1aadb3105c0"\r\n
+            Accept-Ranges: bytes\r\n
+            Content-Length: 646\r\n
+            Connection: close\r\n
+            Content-Type: text/html\r\n
+            \r\n
+            [Request in frame: 20916]
+            [Time since request: 0.079235000 seconds]
+            [Request URI: /]
+            [Full request URI: http://info.cern.ch/]
+            File Data: 646 bytes
+        Line-based text data: text/html (13 lines)
+    A-MSDU Subframe #2
+        Destination address: 8d:23:57:27:0b:2e (8d:23:57:27:0b:2e)
+        Source address: 90:24:19:cd:37:e2 (90:24:19:cd:37:e2)
+        A-MSDU Length: 48
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 188.184.67.127, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 55650, Seq: 879, Ack: 77, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  25335 160.468279     192.168.34.12         192.168.34.1          DNS      171    Standard query 0x94f6 A supl.google.com
+
+Frame 25335: 171 bytes on wire (1368 bits), 171 bytes captured (1368 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 6818, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  25337 160.469770     192.168.34.12         192.168.34.1          DNS      166    Standard query 0x01a5 A agnss.goog
+
+Frame 25337: 166 bytes on wire (1328 bits), 166 bytes captured (1328 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 35499, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  25345 160.478182     192.168.34.1          192.168.34.12         DNS      203    Standard query response 0x94f6 A supl.google.com A 142.250.147.192
+
+Frame 25345: 203 bytes on wire (1624 bits), 203 bytes captured (1624 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 6818
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  25354 160.481339     192.168.34.1          192.168.34.12         DNS      198    Standard query response 0x01a5 A agnss.goog A 35.244.164.0
+
+Frame 25354: 198 bytes on wire (1584 bits), 198 bytes captured (1584 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 35499
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  26882 161.744757     192.168.34.12         192.168.34.1          DNS      187    Standard query 0xf5d8 A mobilemaps-pa-gz.googleapis.com
+
+Frame 26882: 187 bytes on wire (1496 bits), 187 bytes captured (1496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 44288, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  26904 161.763090     192.168.34.1          192.168.34.12         DNS      219    Standard query response 0xf5d8 A mobilemaps-pa-gz.googleapis.com A 216.239.38.135
+
+Frame 26904: 219 bytes on wire (1752 bits), 219 bytes captured (1752 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 44288
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  41036 189.104245     192.168.34.12         192.168.34.1          DNS      190    Standard query 0xa34f A proactivebackend-pa.googleapis.com
+
+Frame 41036: 190 bytes on wire (1520 bits), 190 bytes captured (1520 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 64421, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  41037 189.114023     192.168.34.1          192.168.34.12         DNS      334    Standard query response 0xa34f A proactivebackend-pa.googleapis.com A 142.250.203.202 A 142.250.203.138 A 216.58.215.106 A 142.250.75.10 A 216.58.208.202 A 142.250.186.202 A 172.217.16.42 A 172.217.16.10
+
+Frame 41037: 334 bytes on wire (2672 bits), 334 bytes captured (2672 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 64421
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  50394 222.018973     192.168.34.12         192.168.34.1          DNS      172    Standard query 0xbef1 A post.tio2.com.ua
+
+Frame 50394: 172 bytes on wire (1376 bits), 172 bytes captured (1376 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 192.168.34.1
+User Datagram Protocol, Src Port: 21250, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+  50397 222.057782     192.168.34.1          192.168.34.12         DNS      204    Standard query response 0xbef1 A post.tio2.com.ua A 185.168.128.226
+
+Frame 50397: 204 bytes on wire (1632 bits), 204 bytes captured (1632 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.1, Dst: 192.168.34.12
+User Datagram Protocol, Src Port: 53, Dst Port: 21250
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+  64859 260.139882     192.168.34.12         142.250.186.195       HTTP     409    GET /generate_204 HTTP/1.1 
+
+Frame 64859: 409 bytes on wire (3272 bits), 409 bytes captured (3272 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: op.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 142.250.186.195
+Transmission Control Protocol, Src Port: 33268, Dst Port: 80, Seq: 1, Ack: 1, Len: 227
+Hypertext Transfer Protocol
+    GET /generate_204 HTTP/1.1\r\n
+    Connection: close\r\n
+    User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36\r\n
+    Host: connectivitycheck.gstatic.com\r\n
+    Accept-Encoding: gzip\r\n
+    \r\n
+    [Response in frame: 64870]
+    [Full request URI: http://connectivitycheck.gstatic.com/generate_204]
+
+No.     Time           Source                Destination           Protocol Length Info
+  64870 260.153675     142.250.186.195       192.168.34.12         TCP      412    HTTP/1.1 204 No Content 80 → 33268 [FIN, ACK] Seq=147 Ack=228 Win=268800 Len=0 TSval=2494127371 TSecr=2851548820
+
+Frame 64870: 412 bytes on wire (3296 bits), 412 bytes captured (3296 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+IEEE 802.11 Aggregate MSDU
+    A-MSDU Subframe #1
+        Destination address: 88:42:24:00:d4:3a (88:42:24:00:d4:3a)
+        Source address: 2c:5d:16:47:54:db (2c:5d:16:47:54:db)
+        A-MSDU Length: 206
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 142.250.186.195, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 33268, Seq: 1, Ack: 228, Len: 146
+        Hypertext Transfer Protocol
+            HTTP/1.1 204 No Content\r\n
+            Content-Length: 0\r\n
+            Cross-Origin-Resource-Policy: cross-origin\r\n
+            Date: Sat, 08 Mar 2025 14:14:11 GMT\r\n
+            Connection: close\r\n
+            \r\n
+            [Request in frame: 64859]
+            [Time since request: 0.013793000 seconds]
+            [Request URI: /generate_204]
+            [Full request URI: http://connectivitycheck.gstatic.com/generate_204]
+    A-MSDU Subframe #2
+        Destination address: be:1e:54:5d:ed:ca (be:1e:54:5d:ed:ca)
+        Source address: 1a:68:25:8c:2e:8f (1a:68:25:8c:2e:8f)
+        A-MSDU Length: 60
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 142.250.186.195, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 33268, Seq: 147, Ack: 228, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+  65543 269.538441     192.168.34.12         188.184.67.127        HTTP     246    GET / HTTP/1.1 
+
+Frame 65543: 246 bytes on wire (1968 bits), 246 bytes captured (1968 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: op.....TC
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.34.12, Dst: 188.184.67.127
+Transmission Control Protocol, Src Port: 47908, Dst Port: 80, Seq: 1, Ack: 1, Len: 76
+Hypertext Transfer Protocol
+    GET / HTTP/1.1\r\n
+    Host: info.cern.ch\r\n
+    User-Agent: curl/8.11.1\r\n
+    Accept: */*\r\n
+    \r\n
+    [Response in frame: 65547]
+    [Full request URI: http://info.cern.ch/]
+
+No.     Time           Source                Destination           Protocol Length Info
+  65547 269.580388     188.184.67.127        192.168.34.12         TCP      1120   HTTP/1.1 200 OK  (text/html)80 → 47908 [FIN, ACK] Seq=879 Ack=77 Win=32044 Len=0
+
+Frame 65547: 1120 bytes on wire (8960 bits), 1120 bytes captured (8960 bits)
+Radiotap Header v0, Length 72
+802.11 radio information
+IEEE 802.11 QoS Data, Flags: .p....F.C
+IEEE 802.11 Aggregate MSDU
+    A-MSDU Subframe #1
+        Destination address: 88:42:24:00:d4:3a (88:42:24:00:d4:3a)
+        Source address: 2c:5d:16:47:54:db (2c:5d:16:47:54:db)
+        A-MSDU Length: 926
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 188.184.67.127, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 47908, Seq: 1, Ack: 77, Len: 878
+        Hypertext Transfer Protocol
+            HTTP/1.1 200 OK\r\n
+            Date: Sat, 08 Mar 2025 14:14:20 GMT\r\n
+            Server: Apache\r\n
+            Last-Modified: Wed, 05 Feb 2014 16:00:31 GMT\r\n
+            ETag: "286-4f1aadb3105c0"\r\n
+            Accept-Ranges: bytes\r\n
+            Content-Length: 646\r\n
+            Connection: close\r\n
+            Content-Type: text/html\r\n
+            \r\n
+            [Request in frame: 65543]
+            [Time since request: 0.041947000 seconds]
+            [Request URI: /]
+            [Full request URI: http://info.cern.ch/]
+            File Data: 646 bytes
+        Line-based text data: text/html (13 lines)
+    A-MSDU Subframe #2
+        Destination address: 18:6c:48:91:c6:01 (18:6c:48:91:c6:01)
+        Source address: c1:d9:1a:4f:90:76 (c1:d9:1a:4f:90:76)
+        A-MSDU Length: 48
+        Logical-Link Control
+        Internet Protocol Version 4, Src: 188.184.67.127, Dst: 192.168.34.12
+        Transmission Control Protocol, Src Port: 80, Dst Port: 47908, Seq: 879, Ack: 77, Len: 0

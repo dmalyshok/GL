@@ -1,0 +1,1062 @@
+
+1. List of Used Tools and Configuration Changes
+Tools Used:
+
+    iw – Manage and configure wireless interfaces.
+    wpa_supplicant – Connect to Wi-Fi networks using WPA/WPA2/WPA3 security.
+    wpa_cli – Interact with wpa_supplicant in real-time.
+    tcpdump / Wireshark – Capture and analyze network traffic.
+    horst / wavemon – Monitor signal strength, noise, and interference.
+    lspci - Provides detailed information about each connected PCI device, including vendor, device ID, and description
+
+2. Technical details about the WiFi adapter on the PC/laptop.
+
+
+┌──(kali㉿kali)-[~]
+└─$ lspci | grep -i Wi      
+00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
+
+
+┌──(kali㉿kali)-[~]
+└─$ iw dev           
+phy#0
+        Unnamed/non-netdev interface
+                wdev 0x9
+                addr f0:77:c3:04:ce:fa
+                type P2P-device
+        Interface wlan0
+                ifindex 3
+                wdev 0x1
+                addr f2:23:20:8a:17:dc
+                ssid gl_wpa3
+                type managed
+                channel 1 (2412 MHz), width: 40 MHz, center1: 2422 MHz
+                txpower 22.00 dBm
+                multicast TXQ:
+                        qsz-byt qsz-pkt flows   drops   marks   overlmt hashcol tx-bytes        tx-packets
+                        0       0       0       0       0       0       0       0               0
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ iw list
+Wiphy phy0
+        wiphy index: 0
+        max # scan SSIDs: 20
+        max scan IEs length: 356 bytes
+        max # sched scan SSIDs: 20
+        max # match sets: 8
+        Retry short limit: 7
+        Retry long limit: 4
+        Coverage class: 0 (up to 0m)
+        Device supports RSN-IBSS.
+        Device supports AP-side u-APSD.
+        Device supports T-DLS.
+        Supported Ciphers:
+                * WEP40 (00-0f-ac:1)
+                * WEP104 (00-0f-ac:5)
+                * TKIP (00-0f-ac:2)
+                * CCMP-128 (00-0f-ac:4)
+                * GCMP-128 (00-0f-ac:8)
+                * GCMP-256 (00-0f-ac:9)
+                * CMAC (00-0f-ac:6)
+                * GMAC-128 (00-0f-ac:11)
+                * GMAC-256 (00-0f-ac:12)
+        Available Antennas: TX 0x3 RX 0x3
+        Configured Antennas: TX 0x3 RX 0x3
+        Supported interface modes:
+                 * IBSS
+                 * managed
+                 * AP
+                 * AP/VLAN
+                 * monitor
+                 * P2P-client
+                 * P2P-GO
+                 * P2P-device
+        Band 1:
+                Capabilities: 0x19ef
+                        RX LDPC
+                        HT20/HT40
+                        SM Power Save disabled
+                        RX HT20 SGI
+                        RX HT40 SGI
+                        TX STBC
+                        RX STBC 1-stream
+                        Max AMSDU length: 7935 bytes
+                        DSSS/CCK HT40
+                Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+                Minimum RX AMPDU time spacing: 4 usec (0x05)
+                HT Max RX data rate: 300 Mbps
+                HT TX/RX MCS rate indexes supported: 0-15
+                HE Iftypes: managed, P2P-client
+                        HE MAC Capabilities (0x78019a30abc0):
+                                +HTC HE Supported
+                                Trigger Frame MAC Padding Duration: 2
+                                Multi-TID Aggregation Support: 7
+                                Broadcast TWT
+                                32-bit BA Bitmap
+                                OM Control
+                                Maximum A-MPDU Length Exponent: 3
+                                RX Control Frame to MultiBSS
+                                A-MSDU in A-MPDU
+                                Multi-TID Aggregation TX: 7
+                                UL 2x996-Tone RU
+                        HE PHY Capabilities: (0x023f0e09fd098c160ff001):
+                                HE40/2.4GHz
+                                Punctured Preamble RX: 15
+                                Device Class: 1
+                                LDPC Coding in Payload
+                                NDP with 4x HE-LTF and 3.2us GI
+                                STBC Tx <= 80MHz
+                                STBC Rx <= 80MHz
+                                DCM Max Constellation: 1
+                                DCM Max Constellation Rx: 1
+                                SU Beamformee
+                                Beamformee STS <= 80Mhz: 7
+                                Beamformee STS > 80Mhz: 7
+                                Sounding Dimensions <= 80Mhz: 1
+                                Sounding Dimensions > 80Mhz: 1
+                                Triggered SU Beamforming Feedback
+                                Triggered MU Beamforming Feedback
+                                PPE Threshold Present
+                                Power Boost Factor ar
+                                HE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI
+                                Max NC: 2
+                                HE ER SU PPDU 4x HE-LTF 0.8us GI
+                                20MHz in 40MHz HE PPDU 2.4GHz
+                                20MHz in 160/80+80MHz HE PPDU
+                                80MHz in 160/80+80MHz HE PPDU
+                                RX Full BW SU Using HE MU PPDU with Compression SIGB
+                                RX Full BW SU Using HE MU PPDU with Non-Compression SIGB
+                        HE RX MCS and NSS set <= 80 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        HE TX MCS and NSS set <= 80 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        PPE Threshold 0x61 0x1c 0xc7 0x71 
+                HE Iftypes: AP, P2P-GO
+                        HE MAC Capabilities (0x70011a100000):
+                                +HTC HE Supported
+                                Multi-TID Aggregation Support: 7
+                                Broadcast TWT
+                                OM Control
+                                Maximum A-MPDU Length Exponent: 3
+                        HE PHY Capabilities: (0x02200e090009800401c000):
+                                HE40/2.4GHz
+                                LDPC Coding in Payload
+                                NDP with 4x HE-LTF and 3.2us GI
+                                STBC Tx <= 80MHz
+                                STBC Rx <= 80MHz
+                                DCM Max Constellation: 1
+                                DCM Max Constellation Rx: 1
+                                Sounding Dimensions <= 80Mhz: 1
+                                Sounding Dimensions > 80Mhz: 1
+                                PPE Threshold Present
+                                HE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI
+                                HE ER SU PPDU 4x HE-LTF 0.8us GI
+                        HE RX MCS and NSS set <= 80 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        HE TX MCS and NSS set <= 80 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        PPE Threshold 0x61 0x1c 0xc7 0x71 
+                Bitrates (non-HT):
+                        * 1.0 Mbps
+                        * 2.0 Mbps (short preamble supported)
+                        * 5.5 Mbps (short preamble supported)
+                        * 11.0 Mbps (short preamble supported)
+                        * 6.0 Mbps
+                        * 9.0 Mbps
+                        * 12.0 Mbps
+                        * 18.0 Mbps
+                        * 24.0 Mbps
+                        * 36.0 Mbps
+                        * 48.0 Mbps
+                        * 54.0 Mbps
+                Frequencies:
+                        * 2412.0 MHz [1] (22.0 dBm)
+                        * 2417.0 MHz [2] (22.0 dBm)
+                        * 2422.0 MHz [3] (22.0 dBm)
+                        * 2427.0 MHz [4] (22.0 dBm)
+                        * 2432.0 MHz [5] (22.0 dBm)
+                        * 2437.0 MHz [6] (22.0 dBm)
+                        * 2442.0 MHz [7] (22.0 dBm)
+                        * 2447.0 MHz [8] (22.0 dBm)
+                        * 2452.0 MHz [9] (22.0 dBm)
+                        * 2457.0 MHz [10] (22.0 dBm)
+                        * 2462.0 MHz [11] (22.0 dBm)
+                        * 2467.0 MHz [12] (22.0 dBm)
+                        * 2472.0 MHz [13] (22.0 dBm)
+                        * 2484.0 MHz [14] (disabled)
+        Band 2:
+                Capabilities: 0x19ef
+                        RX LDPC
+                        HT20/HT40
+                        SM Power Save disabled
+                        RX HT20 SGI
+                        RX HT40 SGI
+                        TX STBC
+                        RX STBC 1-stream
+                        Max AMSDU length: 7935 bytes
+                        DSSS/CCK HT40
+                Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+                Minimum RX AMPDU time spacing: 4 usec (0x05)
+                HT Max RX data rate: 300 Mbps
+                HT TX/RX MCS rate indexes supported: 0-15
+                VHT Capabilities (0x039071f6):
+                        Max MPDU length: 11454
+                        Supported Channel Width: 160 MHz
+                        RX LDPC
+                        short GI (80 MHz)
+                        short GI (160/80+80 MHz)
+                        TX STBC
+                        SU Beamformee
+                        MU Beamformee
+                VHT RX MCS set:
+                        1 streams: MCS 0-9
+                        2 streams: MCS 0-9
+                        3 streams: not supported
+                        4 streams: not supported
+                        5 streams: not supported
+                        6 streams: not supported
+                        7 streams: not supported
+                        8 streams: not supported
+                VHT RX highest supported: 0 Mbps
+                VHT TX MCS set:
+                        1 streams: MCS 0-9
+                        2 streams: MCS 0-9
+                        3 streams: not supported
+                        4 streams: not supported
+                        5 streams: not supported
+                        6 streams: not supported
+                        7 streams: not supported
+                        8 streams: not supported
+                VHT TX highest supported: 0 Mbps
+                VHT extended NSS: supported
+                HE Iftypes: managed, P2P-client
+                        HE MAC Capabilities (0x78018a30abc0):
+                                +HTC HE Supported
+                                Trigger Frame MAC Padding Duration: 2
+                                Multi-TID Aggregation Support: 7
+                                Broadcast TWT
+                                32-bit BA Bitmap
+                                OM Control
+                                Maximum A-MPDU Length Exponent: 1
+                                RX Control Frame to MultiBSS
+                                A-MSDU in A-MPDU
+                                Multi-TID Aggregation TX: 7
+                                UL 2x996-Tone RU
+                        HE PHY Capabilities: (0x0c3f0e09fd098c160ff001):
+                                HE40/HE80/5GHz
+                                HE160/5GHz
+                                Punctured Preamble RX: 15
+                                Device Class: 1
+                                LDPC Coding in Payload
+                                NDP with 4x HE-LTF and 3.2us GI
+                                STBC Tx <= 80MHz
+                                STBC Rx <= 80MHz
+                                DCM Max Constellation: 1
+                                DCM Max Constellation Rx: 1
+                                SU Beamformee
+                                Beamformee STS <= 80Mhz: 7
+                                Beamformee STS > 80Mhz: 7
+                                Sounding Dimensions <= 80Mhz: 1
+                                Sounding Dimensions > 80Mhz: 1
+                                Triggered SU Beamforming Feedback
+                                Triggered MU Beamforming Feedback
+                                PPE Threshold Present
+                                Power Boost Factor ar
+                                HE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI
+                                Max NC: 2
+                                HE ER SU PPDU 4x HE-LTF 0.8us GI
+                                20MHz in 40MHz HE PPDU 2.4GHz
+                                20MHz in 160/80+80MHz HE PPDU
+                                80MHz in 160/80+80MHz HE PPDU
+                                RX Full BW SU Using HE MU PPDU with Compression SIGB
+                                RX Full BW SU Using HE MU PPDU with Non-Compression SIGB
+                        HE RX MCS and NSS set <= 80 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        HE TX MCS and NSS set <= 80 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        HE RX MCS and NSS set 160 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        HE TX MCS and NSS set 160 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        PPE Threshold 0x61 0x1c 0xc7 0x71 
+                HE Iftypes: AP, P2P-GO
+                        HE MAC Capabilities (0x70010a100000):
+                                +HTC HE Supported
+                                Multi-TID Aggregation Support: 7
+                                Broadcast TWT
+                                OM Control
+                                Maximum A-MPDU Length Exponent: 1
+                        HE PHY Capabilities: (0x0c200e090009800401c000):
+                                HE40/HE80/5GHz
+                                HE160/5GHz
+                                LDPC Coding in Payload
+                                NDP with 4x HE-LTF and 3.2us GI
+                                STBC Tx <= 80MHz
+                                STBC Rx <= 80MHz
+                                DCM Max Constellation: 1
+                                DCM Max Constellation Rx: 1
+                                Sounding Dimensions <= 80Mhz: 1
+                                Sounding Dimensions > 80Mhz: 1
+                                PPE Threshold Present
+                                HE SU PPDU & HE PPDU 4x HE-LTF 0.8us GI
+                                HE ER SU PPDU 4x HE-LTF 0.8us GI
+                        HE RX MCS and NSS set <= 80 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        HE TX MCS and NSS set <= 80 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        HE RX MCS and NSS set 160 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        HE TX MCS and NSS set 160 MHz
+                                1 streams: MCS 0-11
+                                2 streams: MCS 0-11
+                                3 streams: not supported
+                                4 streams: not supported
+                                5 streams: not supported
+                                6 streams: not supported
+                                7 streams: not supported
+                                8 streams: not supported
+                        PPE Threshold 0x61 0x1c 0xc7 0x71 
+                Bitrates (non-HT):
+                        * 6.0 Mbps
+                        * 9.0 Mbps
+                        * 12.0 Mbps
+                        * 18.0 Mbps
+                        * 24.0 Mbps
+                        * 36.0 Mbps
+                        * 48.0 Mbps
+                        * 54.0 Mbps
+                Frequencies:
+                        * 5180.0 MHz [36] (22.0 dBm) (no IR)
+                        * 5200.0 MHz [40] (22.0 dBm) (no IR)
+                        * 5220.0 MHz [44] (22.0 dBm) (no IR)
+                        * 5240.0 MHz [48] (22.0 dBm) (no IR)
+                        * 5260.0 MHz [52] (22.0 dBm) (no IR, radar detection)
+                        * 5280.0 MHz [56] (22.0 dBm) (no IR, radar detection)
+                        * 5300.0 MHz [60] (22.0 dBm) (no IR, radar detection)
+                        * 5320.0 MHz [64] (22.0 dBm) (no IR, radar detection)
+                        * 5340.0 MHz [68] (disabled)
+                        * 5360.0 MHz [72] (disabled)
+                        * 5380.0 MHz [76] (disabled)
+                        * 5400.0 MHz [80] (disabled)
+                        * 5420.0 MHz [84] (disabled)
+                        * 5440.0 MHz [88] (disabled)
+                        * 5460.0 MHz [92] (disabled)
+                        * 5480.0 MHz [96] (disabled)
+                        * 5500.0 MHz [100] (22.0 dBm) (no IR, radar detection)
+                        * 5520.0 MHz [104] (22.0 dBm) (no IR, radar detection)
+                        * 5540.0 MHz [108] (22.0 dBm) (no IR, radar detection)
+                        * 5560.0 MHz [112] (22.0 dBm) (no IR, radar detection)
+                        * 5580.0 MHz [116] (22.0 dBm) (no IR, radar detection)
+                        * 5600.0 MHz [120] (22.0 dBm) (no IR, radar detection)
+                        * 5620.0 MHz [124] (22.0 dBm) (no IR, radar detection)
+                        * 5640.0 MHz [128] (22.0 dBm) (no IR, radar detection)
+                        * 5660.0 MHz [132] (22.0 dBm) (no IR, radar detection)
+                        * 5680.0 MHz [136] (22.0 dBm) (no IR, radar detection)
+                        * 5700.0 MHz [140] (22.0 dBm) (no IR, radar detection)
+                        * 5720.0 MHz [144] (22.0 dBm) (no IR, radar detection)
+                        * 5745.0 MHz [149] (22.0 dBm)
+                        * 5765.0 MHz [153] (22.0 dBm)
+                        * 5785.0 MHz [157] (22.0 dBm)
+                        * 5805.0 MHz [161] (22.0 dBm)
+                        * 5825.0 MHz [165] (22.0 dBm)
+                        * 5845.0 MHz [169] (disabled)
+                        * 5865.0 MHz [173] (disabled)
+                        * 5885.0 MHz [177] (disabled)
+                        * 5905.0 MHz [181] (disabled)
+        Supported commands:
+                 * new_interface
+                 * set_interface
+                 * new_key
+                 * start_ap
+                 * new_station
+                 * new_mpath
+                 * set_mesh_config
+                 * set_bss
+                 * authenticate
+                 * associate
+                 * deauthenticate
+                 * disassociate
+                 * join_ibss
+                 * join_mesh
+                 * remain_on_channel
+                 * set_tx_bitrate_mask
+                 * frame
+                 * frame_wait_cancel
+                 * set_wiphy_netns
+                 * set_channel
+                 * tdls_mgmt
+                 * tdls_oper
+                 * start_sched_scan
+                 * probe_client
+                 * set_noack_map
+                 * register_beacons
+                 * start_p2p_device
+                 * set_mcast_rate
+                 * connect
+                 * disconnect
+                 * channel_switch
+                 * set_qos_map
+                 * add_tx_ts
+                 * set_multicast_to_unicast
+        WoWLAN support:
+                 * wake up on disconnect
+                 * wake up on magic packet
+                 * wake up on pattern match, up to 20 patterns of 16-128 bytes,
+                   maximum packet offset 0 bytes
+                 * can do GTK rekeying
+                 * wake up on GTK rekey failure
+                 * wake up on EAP identity request
+                 * wake up on 4-way handshake
+                 * wake up on rfkill release
+                 * wake up on network detection, up to 8 match sets
+        software interface modes (can always be added):
+                 * AP/VLAN
+                 * monitor
+        valid interface combinations:
+                 * #{ managed } <= 1, #{ P2P-client, P2P-GO } <= 1, #{ P2P-device } <= 1,
+                   total <= 3, #channels <= 2
+                 * #{ managed } <= 1, #{ AP, P2P-client, P2P-GO } <= 1, #{ P2P-device } <= 1,
+                   total <= 3, #channels <= 1
+        HT Capability overrides:
+                 * MCS: ff ff ff ff ff ff ff ff ff ff
+                 * maximum A-MSDU length
+                 * supported channel width
+                 * short GI for 40 MHz
+                 * max A-MPDU length exponent
+                 * min MPDU start spacing
+        Device supports TX status socket option.
+        Device supports HT-IBSS.
+        Device supports SAE with AUTHENTICATE command
+        Device supports low priority scan.
+        Device supports scan flush.
+        Device supports per-vif TX power setting
+        P2P GO supports CT window setting
+        P2P GO supports opportunistic powersave setting
+        Driver supports full state transitions for AP/GO clients
+        Driver supports a userspace MPM
+        Driver/device bandwidth changes during BSS lifetime (AP/GO mode)
+        Device adds DS IE to probe requests
+        Device can update TPC Report IE
+        Device supports static SMPS
+        Device supports dynamic SMPS
+        Device supports WMM-AC admission (TSPECs)
+        Device supports configuring vdev MAC-addr on create.
+        Device supports randomizing MAC-addr in scans.
+        Device supports randomizing MAC-addr in sched scans.
+        Device supports randomizing MAC-addr in net-detect scans.
+        max # scan plans: 2
+        max scan plan interval: 65535
+        max scan plan iterations: 254
+        Supported TX frame types:
+                 * IBSS: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+                 * managed: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+                 * AP: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+                 * AP/VLAN: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+                 * mesh point: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+                 * P2P-client: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+                 * P2P-GO: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+                 * P2P-device: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+        Supported RX frame types:
+                 * IBSS: 0x40 0xb0 0xc0 0xd0
+                 * managed: 0x40 0xb0 0xd0
+                 * AP: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
+                 * AP/VLAN: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
+                 * mesh point: 0xb0 0xc0 0xd0
+                 * P2P-client: 0x40 0xd0
+                 * P2P-GO: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
+                 * P2P-device: 0x40 0xd0
+        Supported extended features:
+                * [ VHT_IBSS ]: VHT-IBSS
+                * [ RRM ]: RRM
+                * [ MU_MIMO_AIR_SNIFFER ]: MU-MIMO sniffer
+                * [ SCAN_START_TIME ]: scan start timestamp
+                * [ BSS_PARENT_TSF ]: BSS last beacon/probe TSF
+                * [ BEACON_RATE_LEGACY ]: legacy beacon rate setting
+                * [ FILS_STA ]: STA FILS (Fast Initial Link Setup)
+                * [ FILS_MAX_CHANNEL_TIME ]: FILS max channel attribute override with dwell time
+                * [ ACCEPT_BCAST_PROBE_RESP ]: accepts broadcast probe response
+                * [ OCE_PROBE_REQ_HIGH_TX_RATE ]: probe request TX at high rate (at least 5.5Mbps)
+                * [ CONTROL_PORT_OVER_NL80211 ]: control port over nl80211
+                * [ TXQS ]: FQ-CoDel-enabled intermediate TXQs
+                * [ SCAN_MIN_PREQ_CONTENT ]: use probe request with only rate IEs in scans
+                * [ ENABLE_FTM_RESPONDER ]: enable FTM (Fine Time Measurement) responder
+                * [ CONTROL_PORT_NO_PREAUTH ]: disable pre-auth over nl80211 control port support
+                * [ PROTECTED_TWT ]: protected Target Wake Time (TWT) support
+                * [ DEL_IBSS_STA ]: deletion of IBSS station support
+                * [ SCAN_FREQ_KHZ ]: scan on kHz frequency support
+                * [ CONTROL_PORT_OVER_NL80211_TX_STATUS ]: tx status for nl80211 control port support
+                * [ PROT_RANGE_NEGO_AND_MEASURE ]: support for MFP in range measurement negotiation/procedure
+                * [ POWERED_ADDR_CHANGE ]: can change MAC address while up
+                * [ SPP_AMSDU_SUPPORT ]: SPP A-MSDU support
+        Peer measurement (PMSR)
+                Max peers: 5
+                REPORT_AP_TSF
+                RANDOMIZE_MAC_ADDR
+                FTM (Fine time measurement or Flight time measurement)
+                        Preambles: LEGACY HT VHT
+                        Bandwidth: 20_NOHT 20 40 80 160
+                        ASAP
+                        NON_ASAP
+                        REQ_LCI
+                        REQ_CIVICLOC
+                        TRIGGER_BASED
+                        NON_TRIGGER_BASED
+
+3. Two separate “wpa_supplicant.conf” files and connectivity logs:
+a. Connection to the particular SSID. Share Wi-Fi connection details by executing “status” in the “wpa_cli” tool. Share logs with the connectivity process details. Be ready to explain the output.
+
+┌──(kali㉿kali)-[~]
+└─$ cat /etc/wpa_supplicant/wpa_supplicant.conf
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+country=PL
+
+network={
+        ssid="gl_wpa3"
+        sae_password="Qwerty123!"
+        key_mgmt=SAE
+        ieee80211w=2
+}
+
+
+┌───(kali㉿kali)-[~]
+└─$ sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -f /var/log/wpa_supplicant.log
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_cli status                                                                       
+Selected interface 'wlan0'
+bssid=56:db:a2:18:dd:61
+freq=2412
+ssid=gl_wpa3
+id=0
+mode=station
+wifi_generation=6
+pairwise_cipher=CCMP
+group_cipher=CCMP
+key_mgmt=SAE
+pmf=2
+mgmt_group_cipher=BIP
+sae_group=19
+sae_h2e=0
+sae_pk=0
+wpa_state=COMPLETED
+p2p_device_address=f0:77:c3:04:ce:fa
+address=f2:23:20:8a:17:dc
+uuid=1e54f02a-45e0-5317-9e8f-1636253cdcd0
+ieee80211ac=1
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo cat /var/log/wpa_supplicant.log                                                                     
+Successfully initialized wpa_supplicant
+wlan0: SME: Trying to authenticate with 56:db:a2:18:dd:61 (SSID='gl_wpa3' freq=2412 MHz)
+wlan0: SME: Trying to authenticate with 56:db:a2:18:dd:61 (SSID='gl_wpa3' freq=2412 MHz)
+wlan0: PMKSA-CACHE-ADDED 56:db:a2:18:dd:61 0
+wlan0: Trying to associate with 56:db:a2:18:dd:61 (SSID='gl_wpa3' freq=2412 MHz)
+wlan0: Associated with 56:db:a2:18:dd:61
+wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan0: WPA: Key negotiation completed with 56:db:a2:18:dd:61 [PTK=CCMP GTK=CCMP]
+wlan0: CTRL-EVENT-CONNECTED - Connection to 56:db:a2:18:dd:61 completed [id=0 id_str=]
+p2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+p2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+nl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0
+p2p-dev-wlan0: CTRL-EVENT-TERMINATING 
+wlan0: CTRL-EVENT-DISCONNECTED bssid=56:db:a2:18:dd:61 reason=3 locally_generated=1
+wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+wlan0: PMKSA-CACHE-REMOVED 56:db:a2:18:dd:61 0
+wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+nl80211: deinit ifname=wlan0 disabled_11b_rates=0
+wlan0: CTRL-EVENT-TERMINATING 
+
+
+
+b. Connects to the particular BSSID (connect to another AP Band if available). Share Wi-Fi connection details by executing “status” in the “wpa_cli” tool. Share logs with the connectivity process details. Be ready to explain the output.
+
+┌──(kali㉿kali)-[~]
+└─$ cat /etc/wpa_supplicant/wpa_supplicant.conf    
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+country=PL
+
+network={
+        bssid=56:db:a2:58:dd:61
+        psk="iron23@#"
+        key_mgmt=WPA-PSK
+}
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -f /var/log/wpa_supplicant.log
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_cli status  
+Selected interface 'wlan0'
+bssid=56:db:a2:58:dd:61
+freq=5240
+ssid=DiscoSuperStar5G
+id=0
+mode=station
+wifi_generation=6
+pairwise_cipher=CCMP
+group_cipher=CCMP
+key_mgmt=WPA2-PSK
+wpa_state=COMPLETED
+p2p_device_address=f0:77:c3:04:ce:fa
+address=36:91:06:73:0f:3a
+uuid=80147e58-a41f-51f8-864a-81607333c560
+ieee80211ac=1
+
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ sudo killall wpa_supplicant                                                                              
+                                                                                                                   
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ sudo cat /var/log/wpa_supplicant.log 
+Successfully initialized wpa_supplicant
+wlan0: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=PL
+wlan0: SME: Trying to authenticate with 56:db:a2:58:dd:61 (SSID='DiscoSuperStar5G' freq=5240 MHz)
+wlan0: CTRL-EVENT-REGDOM-CHANGE init=DRIVER type=COUNTRY alpha2=PL
+wlan0: Trying to associate with 56:db:a2:58:dd:61 (SSID='DiscoSuperStar5G' freq=5240 MHz)
+wlan0: Associated with 56:db:a2:58:dd:61
+wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan0: WPA: Key negotiation completed with 56:db:a2:58:dd:61 [PTK=CCMP GTK=CCMP]
+wlan0: CTRL-EVENT-CONNECTED - Connection to 56:db:a2:58:dd:61 completed [id=0 id_str=]
+p2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+p2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+nl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0
+p2p-dev-wlan0: CTRL-EVENT-TERMINATING 
+wlan0: CTRL-EVENT-DISCONNECTED bssid=56:db:a2:58:dd:61 reason=3 locally_generated=1
+wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+nl80211: deinit ifname=wlan0 disabled_11b_rates=0
+wlan0: CTRL-EVENT-TERMINATING 
+
+4. Short how-to:
+a. switch the Wi-Fi interface to Monitor mode.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo ip link set wlan0 down                  
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ sudo iw dev wlan0 set type monitor      
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ sudo ip link set wlan0 up            
+
+b. start Wi-Fi sniffing on the particular Wi-Fi channel.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo tcpdump -i wlan0 -w capture.pcap
+
+c. decrypt Wi-Fi traffic in Wireshark.
+
+Edit → Preferences → Protocols → IEEE 802.11 → Decryption Keys
+
+wpa-pwd iron23@#:DiscoSuperStar
+
+d. perform Wi-Fi scanning for available networks by using both “wpa_cli” and “iw” tools.
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_cli scan_results
+Selected interface 'wlan0'
+bssid / frequency / signal level / flags / ssid
+56:db:a2:58:dd:61       5240    -49     [WPA2-PSK+SAE-CCMP][WPS][ESS][FILS]     DiscoSuperStar5G
+54:db:a2:58:dd:61       2412    -38     [WPA2-PSK-CCMP][WPS][ESS][FILS] DiscoSuperStar
+56:db:a2:18:dd:61       2412    -38     [WPA2-SAE-CCMP][ESS][FILS]      gl_wpa3
+56:db:a2:58:dc:f1       5200    -78     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-5G-0fcd85
+54:db:a2:58:db:99       2462    -60     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-89bd85
+54:db:a2:58:d7:91       2412    -60     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-097d85
+54:db:a2:58:dc:41       2437    -65     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-04cd85
+54:db:a2:58:dc:f1       2412    -73     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-0fcd85
+2a:c5:c8:0f:e0:01       2437    -62     [WPA2-PSK-CCMP][WPS][ESS][P2P]  DIRECT-01-HP ENVY 6000 series
+56:db:a2:58:dc:41       5180    -80     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-5G-04cd85
+54:db:a2:58:e0:d1       2412    -81     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-0d0e85
+54:db:a2:58:df:89       2412    -83     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-88fd85
+10:5a:f7:af:bd:d0       5260    -89     [WPA2-PSK-CCMP][WPS][ESS]       NETIASPOT-5GHz-AFBDC9
+54:db:a2:58:d9:29       2437    -75     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-829d85
+54:db:a2:59:0d:29       2462    -80     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-82d095
+54:db:a2:59:07:f1       2462    -81     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-0f7095
+56:db:a2:58:db:99       5180    -87     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-5G-89bd85
+10:5a:f7:af:bd:cc       2462    -83     [WPA2-PSK-CCMP][WPS][ESS]       NETIASPOT-2.4GHz-AFBDC9
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo iw dev wlan0 scan | grep 'on wlan0'
+BSS 54:db:a2:58:dd:61(on wlan0)
+BSS 56:db:a2:18:dd:61(on wlan0)
+BSS 54:db:a2:58:dc:41(on wlan0)
+BSS 54:db:a2:58:db:99(on wlan0)
+BSS 56:db:a2:58:dd:61(on wlan0) -- associated
+BSS 56:db:a2:58:dc:f1(on wlan0)
+BSS 54:db:a2:58:d7:91(on wlan0)
+BSS 2a:c5:c8:0f:e0:01(on wlan0)
+BSS 54:db:a2:58:dc:f1(on wlan0)
+BSS 10:5a:f7:af:bd:d0(on wlan0)
+BSS 56:db:a2:58:dc:41(on wlan0)
+BSS 54:db:a2:58:e0:d1(on wlan0)
+BSS 54:db:a2:58:dc:99(on wlan0)
+BSS 54:db:a2:59:07:f1(on wlan0)
+BSS 20:83:f8:72:bf:6c(on wlan0)
+BSS 9a:e8:44:85:85:a7(on wlan0)
+
+e. (optional) measure channel utilization and interference using any other available tools and devices.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo iwlist wlan0 scan | grep Frequency                           
+                    Frequency:2.437 GHz (Channel 6)
+                    Frequency:2.462 GHz (Channel 11)
+                    Frequency:5.24 GHz (Channel 48)
+                    Frequency:5.2 GHz (Channel 40)
+                    Frequency:2.412 GHz (Channel 1)
+                    Frequency:2.412 GHz (Channel 1)
+                    Frequency:2.412 GHz (Channel 1)
+                    Frequency:2.412 GHz (Channel 1)
+                    Frequency:5.18 GHz (Channel 36)
+                    Frequency:2.412 GHz (Channel 1)
+                                                                                                                  
+┌──(kali㉿kali)-[~]
+└─$ sudo iwlist wlan0 scan | grep Frequency | sort | uniq -c | sort -n
+      1                     Frequency:2.437 GHz (Channel 6)
+      1                     Frequency:5.18 GHz (Channel 36)
+      1                     Frequency:5.24 GHz (Channel 48)
+      1                     Frequency:5.2 GHz (Channel 40)
+      2                     Frequency:2.462 GHz (Channel 11)
+      5                     Frequency:2.412 GHz (Channel 1)
+                                                                                                                  
+
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo horst -i wlan0
+
+Packet Statistics
+
+Packets: 28                           Retries:       0.0% (0)                                                  │
+│ Bytes:   8.7k (8948)                  Total bit/sec: 40 (40)                                                   │
+│ Average: ~319 B/Pkt                   Total Usage:   0.0% (58)                                                 │
+│                                                                                                                │
+│ RATE    Packets    Bytes ~B/P  Pkts% Byte% Usage%                                                              │
+│ -------------------------------------------------------------------------------------------------------------- │
+│   1M          9     4.2k  488  32.1  49.2  74.9  *********************************************                 │
+│   6M         19     4.4k  239  67.9  50.8  25.1  ***************                                               │
+│                                                                                                                │
+│ TYPE    Packets    Bytes ~B/P  Pkts% Byte% Usage%                                                              │
+│ -------------------------------------------------------------------------------------------------------------- │
+│ ASOCRQ        1      281  281  3.6   3.1   1.5   *                                                             │
+│ DATA          4      152   38  14.3  1.7   3.5   **                                                            │
+│ ASOCRP        1      319  319  3.6   3.6   1.6   *                                                             │
+│ PROBRP       12     5.7k  491  42.9  65.8  75.8  **********************************************                │
+│ BEACON        4     1.5k  406  14.3  18.2  11.7  *******                                                       │
+│ QDATA         4      618  154  14.3  6.9   4.3   **                                                            │
+│ AUTH          2       60   30  7.1   0.7   1.7   *           
+
+Spectrum Analyzer
+
+┌────────────────────────────────────────────── "Spectrum Analyzer" ──────────────────────────────────────────────┐
+│-30│                                                                                                             │
+│dBm│                                                                                                 ##          │
+│-40│ ==    ==                                                                                        ==          │
+│80%│ ==    ==                                                                                        ==          │
+│   │ ==    ==                                                                                        ==          │
+│-50│ ==    ==                                                                                        ==          │
+│   │ ==    ==                                                                                        ==          │
+│60%│ ==    ==                                                                                        ==          │
+│-60│ ==    ==                                                                                        ==          │
+│   │ ==    ==                                                                                        ==          │
+│-70│ ==    ==                                                                                        ==          │
+│40%│ ==    ==                      ==                                                                ==          │
+│   │ ==    ==                      ==                                                    ==          ==          │
+│-80│ ==    ==                      ==                            ==                ==    ==          ==          │
+│   │ ==    ==                      ==                            ==                ==    ==          ==          │
+│20%│ ==#   ==                      ==                            ==                ==    ==          ==          │
+│-90│ ==#   ==                      ==                            ==                ==    ==          ==          │
+│   │ ==#   ==                      ==                            ==#               ==    ==          ==#         │
+│   │ ==#   ==#                     ==#                           ==#               ==#   ==#         ==#         │
+│───│─────────────────────────────────────────────────────────────────────────────────────────────────────────────│
+│CHA│ 01    02    03    04    05    06    07    08    09    10    11    12    13    36    40    44    48    52    │
+│Sig│ -41   -40   0     0     0     -74   0     0     0     0     -79   0     0     -79   -77   0     -40   0     │
+│Nod│ 4     1     0     0     0     1     0     0     0     0     2     0     0     1     1     0     2     0     │
+│Use│ 0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo wavemon
+
+┌─Interface───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│wlan0 (IEEE 802.11), phy 0, reg: PL (DFS-ETSI), SSID: DiscoSuperStar5G                                           │
+├─Levels──────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                                 │
+│link quality: 73%  (51/70)                                                                                       │
+│==================================================================================                               │
+│                                                                                                                 │
+│                                                                                                                 │
+│signal level: -59 dBm (1.26 nW)                                                                                  │
+│===================================================                                                              │
+│                                                                                                                 │
+├─Statistics──────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│RX: 16 (2.05 KiB), drop: 1 (6.2%)                                                                                │
+│TX: 4 (599 B)                                                                                                    │
+├─Info────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│mode: Managed, connected to: 56:DB:A2:58:DD:61, time: 1:58m, inactive: 118.1s                                    │
+│freq: 5240 MHz, ctr1: 5210 MHz, channel: 48 (width: 80 MHz)                                                      │
+│rx rate: 6.0 Mbit/s, tx rate: 245.0 Mbit/s 80MHz                                                                 │
+│beacons: 1135, avg sig: -51 dBm, interval: 0.1s, DTIM: 1                                                         │
+│power mgt: on,  tx-power: 22 dBm (158.49 mW)                                                                     │
+│retry: short limit 7,  rts/cts: off,  frag: off                                                                  │
+├─Network─────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│wlan0 (UP RUNNING BROADCAST MULTICAST)                                                                           │
+│mac: A2:66:EC:58:93:8D, qlen: 1000                                                                               │
+│ip: n/a                                                                                                          │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+f. check the Country's regulatory domain.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo iw reg get   
+global
+country UA: DFS-ETSI
+        (2400 - 2483 @ 40), (N/A, 20), (N/A), NO-OUTDOOR
+        (5150 - 5250 @ 80), (N/A, 20), (N/A), NO-OUTDOOR, AUTO-BW
+        (5250 - 5350 @ 80), (N/A, 20), (0 ms), NO-OUTDOOR, DFS, AUTO-BW
+        (5470 - 5725 @ 160), (N/A, 20), (0 ms), NO-OUTDOOR, DFS
+        (5725 - 5850 @ 80), (N/A, 20), (N/A), NO-OUTDOOR
+        (57000 - 66000 @ 2160), (N/A, 16), (N/A), NO-OUTDOOR
+
+phy#0 (self-managed)
+country PL: DFS-UNSET
+        (2402 - 2437 @ 40), (6, 22), (N/A), AUTO-BW, NO-HT40MINUS, NO-80MHZ, NO-160MHZ
+        (2422 - 2462 @ 40), (6, 22), (N/A), AUTO-BW, NO-80MHZ, NO-160MHZ
+        (2447 - 2482 @ 40), (6, 22), (N/A), AUTO-BW, NO-HT40PLUS, NO-80MHZ, NO-160MHZ
+        (5170 - 5190 @ 160), (6, 22), (N/A), NO-OUTDOOR, AUTO-BW, IR-CONCURRENT, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5190 - 5210 @ 160), (6, 22), (N/A), NO-OUTDOOR, AUTO-BW, IR-CONCURRENT, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5210 - 5230 @ 160), (6, 22), (N/A), NO-OUTDOOR, AUTO-BW, IR-CONCURRENT, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5230 - 5250 @ 160), (6, 22), (N/A), NO-OUTDOOR, AUTO-BW, IR-CONCURRENT, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5250 - 5270 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5270 - 5290 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5290 - 5310 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5310 - 5330 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5490 - 5510 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5510 - 5530 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5530 - 5550 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5550 - 5570 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5570 - 5590 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5590 - 5610 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5610 - 5630 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5630 - 5650 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5650 - 5670 @ 80), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-160MHZ, NO-320MHZ, PASSIVE-SCAN
+        (5670 - 5690 @ 80), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-160MHZ, NO-320MHZ, PASSIVE-SCAN
+        (5690 - 5710 @ 80), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-160MHZ, NO-320MHZ, PASSIVE-SCAN
+        (5710 - 5730 @ 80), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-160MHZ, NO-320MHZ, PASSIVE-SCAN
+        (5735 - 5755 @ 80), (6, 22), (N/A), AUTO-BW, NO-HT40MINUS, NO-160MHZ, NO-320MHZ
+        (5755 - 5775 @ 80), (6, 22), (N/A), AUTO-BW, NO-HT40PLUS, NO-160MHZ, NO-320MHZ
+        (5775 - 5795 @ 80), (6, 22), (N/A), AUTO-BW, NO-HT40MINUS, NO-160MHZ, NO-320MHZ
+        (5795 - 5815 @ 80), (6, 22), (N/A), AUTO-BW, NO-HT40PLUS, NO-160MHZ, NO-320MHZ
+        (5815 - 5835 @ 20), (6, 22), (N/A), AUTO-BW, NO-HT40MINUS, NO-HT40PLUS, NO-80MHZ, NO-160MHZ, NO-320MHZ
+
+                              
+
+g. change the Country's regulatory domain.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo iw reg set PL
+                                                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ sudo iw reg get   
+global
+country PL: DFS-ETSI
+        (2400 - 2483 @ 40), (N/A, 20), (N/A)
+        (5150 - 5250 @ 80), (N/A, 23), (N/A), NO-OUTDOOR, AUTO-BW
+        (5250 - 5350 @ 80), (N/A, 20), (0 ms), NO-OUTDOOR, DFS, AUTO-BW
+        (5470 - 5725 @ 160), (N/A, 26), (0 ms), DFS
+        (5725 - 5875 @ 80), (N/A, 13), (N/A)
+        (5945 - 6425 @ 160), (N/A, 23), (N/A), NO-OUTDOOR
+        (57000 - 66000 @ 2160), (N/A, 40), (N/A)
+
+phy#0 (self-managed)
+country PL: DFS-UNSET
+        (2402 - 2437 @ 40), (6, 22), (N/A), AUTO-BW, NO-HT40MINUS, NO-80MHZ, NO-160MHZ
+        (2422 - 2462 @ 40), (6, 22), (N/A), AUTO-BW, NO-80MHZ, NO-160MHZ
+        (2447 - 2482 @ 40), (6, 22), (N/A), AUTO-BW, NO-HT40PLUS, NO-80MHZ, NO-160MHZ
+        (5170 - 5190 @ 160), (6, 22), (N/A), NO-OUTDOOR, AUTO-BW, IR-CONCURRENT, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5190 - 5210 @ 160), (6, 22), (N/A), NO-OUTDOOR, AUTO-BW, IR-CONCURRENT, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5210 - 5230 @ 160), (6, 22), (N/A), NO-OUTDOOR, AUTO-BW, IR-CONCURRENT, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5230 - 5250 @ 160), (6, 22), (N/A), NO-OUTDOOR, AUTO-BW, IR-CONCURRENT, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5250 - 5270 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5270 - 5290 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5290 - 5310 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5310 - 5330 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5490 - 5510 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5510 - 5530 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5530 - 5550 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5550 - 5570 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5570 - 5590 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5590 - 5610 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5610 - 5630 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-320MHZ, PASSIVE-SCAN
+        (5630 - 5650 @ 160), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-320MHZ, PASSIVE-SCAN
+        (5650 - 5670 @ 80), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-160MHZ, NO-320MHZ, PASSIVE-SCAN
+        (5670 - 5690 @ 80), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-160MHZ, NO-320MHZ, PASSIVE-SCAN
+        (5690 - 5710 @ 80), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40MINUS, NO-160MHZ, NO-320MHZ, PASSIVE-SCAN
+        (5710 - 5730 @ 80), (6, 22), (0 ms), DFS, AUTO-BW, NO-HT40PLUS, NO-160MHZ, NO-320MHZ, PASSIVE-SCAN
+        (5735 - 5755 @ 80), (6, 22), (N/A), AUTO-BW, NO-HT40MINUS, NO-160MHZ, NO-320MHZ
+        (5755 - 5775 @ 80), (6, 22), (N/A), AUTO-BW, NO-HT40PLUS, NO-160MHZ, NO-320MHZ
+        (5775 - 5795 @ 80), (6, 22), (N/A), AUTO-BW, NO-HT40MINUS, NO-160MHZ, NO-320MHZ
+        (5795 - 5815 @ 80), (6, 22), (N/A), AUTO-BW, NO-HT40PLUS, NO-160MHZ, NO-320MHZ
+        (5815 - 5835 @ 20), (6, 22), (N/A), AUTO-BW, NO-HT40MINUS, NO-HT40PLUS, NO-80MHZ, NO-160MHZ, NO-320MHZ
+
+
+
+5. Wi-Fi captures with Beacon frames broadcasted by the secured Wi-Fi AP. Be ready to explain the fields of the particular Beacon frame (for example: how to recognize whether the WiFi5 standard is supported?)
+
+Here is a typical Wi-Fi 5 802.11ac Beacon frame with the VHT Capabilities section
+
+wlan.tag.number == 191
+
+
+HT Capabilities (tag 45) – for Wi-Fi 4 (802.11n)
+VHT Capabilities (tag 191) – for Wi-Fi 5 (802.11ac)
+HE Capabilities (tag 255) – for Wi-Fi 6 (802.11ax)
+
+
+6. Wi-Fi captures with the full connection flow between the Wi-Fi client and secured Wi-Fi AP. Be ready to explain Wi-Fi connection flow (including 4-way handshake) and different types of Wi-Fi frames (data, control, management frames).
+
+To decrypt WPA2/WPA3 traffic, you need to capture the 4-Way Handshake, which is exchanged between the client and access point during the connection process.
+
+Wi-Fi Connection Flow (Including 4-Way Handshake):
+
+Step 1: Probe Request / Probe Response
+
+Frame Type: Management
+Details: The client sends a Probe Request frame to search for available networks. The AP responds with a Probe Response frame containing details about the network.
+
+Step 2: Authentication
+
+Frame Type: Management
+Details: The client sends an Authentication Request to the AP, and the AP responds with an Authentication Response.
+This step may involve Open System Authentication or Shared Key Authentication, depending on the security configuration.
+
+Step 3: Association Request / Association Response
+
+Frame Type: Management
+Details: The client sends an Association Request to the AP, and the AP responds with an Association Response to confirm the connection parameters.
+
+Step 4: 4-Way Handshake
+
+Frame Type: Management
+The 4-Way Handshake is a key exchange process that ensures both the AP and client can securely communicate by verifying the session keys.
+Handshake Frames:
+
+Message 1: The AP sends a Message 1 to the client, containing a nonce (random number).
+Message 2: The client responds with Message 2, which includes its own nonce and the MIC (Message Integrity Code).
+Message 3: The AP sends Message 3, confirming the keys and the session.
+Message 4: The client acknowledges the handshake by sending Message 4 back to the AP.
+
+Step 5: Data Transfer
+
+Frame Type: Data
+Details: Once the 4-Way Handshake is complete, both the AP and the client can start exchanging Data frames, which carry actual user data (e.g., packets from a web page, video streaming, etc.).
+
+Step 6: Deauthentication / Disassociation (if applicable)
+
+Frame Type: Management
+Details: If the client or AP decides to terminate the connection, either can send a Deauthentication or Disassociation frame to end the session.
+
+Types of Wi-Fi Frames:
+
+Wi-Fi communication uses three major types of frames:
+
+Management Frames: Used to establish, maintain, and terminate a connection. Examples include Probe Requests/Responses, Authentication, Association, and Deauthentication frames.
+
+Control Frames: Used to control the flow of data between devices. For example, RTS (Request to Send), CTS (Clear to Send), and ACK (Acknowledgment) frames.
+
+Data Frames: Used to transmit the actual user data (e.g., packets from web traffic or other services).
+
+
+
+
+
+
+
+
+
+

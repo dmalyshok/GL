@@ -1,0 +1,18 @@
+Successfully initialized wpa_supplicant
+wlan0: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=PL
+wlan0: SME: Trying to authenticate with 56:db:a2:58:dd:61 (SSID='DiscoSuperStar5G' freq=5240 MHz)
+wlan0: CTRL-EVENT-REGDOM-CHANGE init=DRIVER type=COUNTRY alpha2=PL
+wlan0: Trying to associate with 56:db:a2:58:dd:61 (SSID='DiscoSuperStar5G' freq=5240 MHz)
+wlan0: Associated with 56:db:a2:58:dd:61
+wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan0: WPA: Key negotiation completed with 56:db:a2:58:dd:61 [PTK=CCMP GTK=CCMP]
+wlan0: CTRL-EVENT-CONNECTED - Connection to 56:db:a2:58:dd:61 completed [id=0 id_str=]
+p2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+p2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+nl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0
+p2p-dev-wlan0: CTRL-EVENT-TERMINATING 
+wlan0: CTRL-EVENT-DISCONNECTED bssid=56:db:a2:58:dd:61 reason=3 locally_generated=1
+wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+nl80211: deinit ifname=wlan0 disabled_11b_rates=0
+wlan0: CTRL-EVENT-TERMINATING 

@@ -1,0 +1,268 @@
+Test tasks
+#1 - Linux WiFi adapter in STA mode
+1. Prepare “wpa_supplicant.conf” file configuration:
+	a. Set target SSID.
+	b. Set target password.
+	c. Set a country regulation domain (according to your actual location).
+	d. (If WPA3 is supported by the Wi-Fi AP) Configure WPA3 security mode.
+
+┌──(kali㉿kali)-[~]
+└─$ cat /etc/wpa_supplicant/wpa_supplicant.conf
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+country=PL
+
+network={
+        ssid="gl_wpa3"
+        sae_password="Qwerty123!"
+        key_mgmt=SAE
+        ieee80211w=2
+}
+
+
+2. Run the “wpa_supplicant” service and ensure that the connection is established successfully. Verify “wpa_supplicant” logs to see the connectivity process details.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -f /var/log/wpa_supplicant.log
+Successfully initialized wpa_supplicant
+
+┌──(kali㉿kali)-[~]
+└─$ sudo cat /var/log/wpa_supplicant.log                                                                     
+Successfully initialized wpa_supplicant
+wlan0: SME: Trying to authenticate with 56:db:a2:18:dd:61 (SSID='gl_wpa3' freq=2412 MHz)
+wlan0: SME: Trying to authenticate with 56:db:a2:18:dd:61 (SSID='gl_wpa3' freq=2412 MHz)
+wlan0: PMKSA-CACHE-ADDED 56:db:a2:18:dd:61 0
+wlan0: Trying to associate with 56:db:a2:18:dd:61 (SSID='gl_wpa3' freq=2412 MHz)
+wlan0: Associated with 56:db:a2:18:dd:61
+wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan0: WPA: Key negotiation completed with 56:db:a2:18:dd:61 [PTK=CCMP GTK=CCMP]
+wlan0: CTRL-EVENT-CONNECTED - Connection to 56:db:a2:18:dd:61 completed [id=0 id_str=]
+
+
+3. Analyze Wi-Fi connection details by executing the “status” command in the “wpa_cli” tool.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_cli status
+Selected interface 'wlan0'
+bssid=56:db:a2:18:dd:61
+freq=2412
+ssid=gl_wpa3
+id=0
+mode=station
+wifi_generation=6
+pairwise_cipher=CCMP
+group_cipher=CCMP
+key_mgmt=SAE
+pmf=2
+mgmt_group_cipher=BIP
+sae_group=19
+sae_h2e=0
+sae_pk=0
+wpa_state=COMPLETED
+p2p_device_address=f0:77:c3:04:ce:fa
+address=56:23:31:eb:5f:10
+uuid=eef3d4a1-928c-5f81-adfe-5d9b2bc34a16
+ieee80211ac=1
+
+4. Ensure that your Wi-Fi network interface has received an IP. If there is no IP, then figure out how to get it.
+
+┌─(kali㉿kali)-[~]
+└─$ ip a             
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+    link/ether b0:22:7a:e2:24:00 brd ff:ff:ff:ff:ff:ff
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 56:23:31:eb:5f:10 brd ff:ff:ff:ff:ff:ff permaddr f0:77:c3:04:ce:fa
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ sudo dhclient wlan0
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ ip add show wlan0  
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 56:23:31:eb:5f:10 brd ff:ff:ff:ff:ff:ff permaddr f0:77:c3:04:ce:fa
+    inet 192.168.34.11/24 brd 192.168.34.255 scope global dynamic wlan0
+       valid_lft 86396sec preferred_lft 86396sec
+
+
+5. Ensure that the Internet is accessible via the WiFi connection (can execute: “ping google.com”).
+
+┌──(kali㉿kali)-[~]
+└─$ ping -c 4 google.com  
+PING google.com (142.250.203.206) 56(84) bytes of data.
+64 bytes from waw02s22-in-f14.1e100.net (142.250.203.206): icmp_seq=1 ttl=117 time=8.96 ms
+64 bytes from waw02s22-in-f14.1e100.net (142.250.203.206): icmp_seq=2 ttl=117 time=11.6 ms
+64 bytes from waw02s22-in-f14.1e100.net (142.250.203.206): icmp_seq=3 ttl=117 time=21.8 ms
+64 bytes from waw02s22-in-f14.1e100.net (142.250.203.206): icmp_seq=4 ttl=117 time=11.9 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+rtt min/avg/max/mdev = 8.955/13.549/21.787/4.889 ms
+
+
+6. Perform Wi-Fi scanning for available networks by using the “wpa_cli” tool.
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_cli scan_results
+Selected interface 'wlan0'
+bssid / frequency / signal level / flags / ssid
+56:db:a2:58:dd:61       5240    -49     [WPA2-PSK+SAE-CCMP][WPS][ESS][FILS]     DiscoSuperStar5G
+54:db:a2:58:dd:61       2412    -38     [WPA2-PSK-CCMP][WPS][ESS][FILS] DiscoSuperStar
+56:db:a2:18:dd:61       2412    -38     [WPA2-SAE-CCMP][ESS][FILS]      gl_wpa3
+56:db:a2:58:dc:f1       5200    -78     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-5G-0fcd85
+54:db:a2:58:db:99       2462    -60     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-89bd85
+54:db:a2:58:d7:91       2412    -60     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-097d85
+54:db:a2:58:dc:41       2437    -65     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-04cd85
+54:db:a2:58:dc:f1       2412    -73     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-0fcd85
+2a:c5:c8:0f:e0:01       2437    -62     [WPA2-PSK-CCMP][WPS][ESS][P2P]  DIRECT-01-HP ENVY 6000 series
+56:db:a2:58:dc:41       5180    -80     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-5G-04cd85
+54:db:a2:58:e0:d1       2412    -81     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-0d0e85
+54:db:a2:58:df:89       2412    -83     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-88fd85
+10:5a:f7:af:bd:d0       5260    -89     [WPA2-PSK-CCMP][WPS][ESS]       NETIASPOT-5GHz-AFBDC9
+54:db:a2:58:d9:29       2437    -75     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-829d85
+54:db:a2:59:0d:29       2462    -80     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-82d095
+54:db:a2:59:07:f1       2462    -81     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-2.4G-0f7095
+56:db:a2:58:db:99       5180    -87     [WPA2-PSK-CCMP][WPS][ESS][FILS] HALNy-5G-89bd85
+10:5a:f7:af:bd:cc       2462    -83     [WPA2-PSK-CCMP][WPS][ESS]       NETIASPOT-2.4GHz-AFBDC9
+
+                                                                                                   
+
+7. Perform Wi-Fi scanning for available networks by using the “iw” tool.
+
+┌──(kali㉿kali)-[~]
+└─$ sudo iw dev wlan0 scan | grep 'on wlan0'
+BSS 54:db:a2:58:dd:61(on wlan0)
+BSS 56:db:a2:18:dd:61(on wlan0)
+BSS 54:db:a2:58:dc:41(on wlan0)
+BSS 54:db:a2:58:db:99(on wlan0)
+BSS 56:db:a2:58:dd:61(on wlan0) -- associated
+BSS 56:db:a2:58:dc:f1(on wlan0)
+BSS 54:db:a2:58:d7:91(on wlan0)
+BSS 2a:c5:c8:0f:e0:01(on wlan0)
+BSS 54:db:a2:58:dc:f1(on wlan0)
+BSS 10:5a:f7:af:bd:d0(on wlan0)
+BSS 56:db:a2:58:dc:41(on wlan0)
+BSS 54:db:a2:58:e0:d1(on wlan0)
+BSS 54:db:a2:58:dc:99(on wlan0)
+BSS 54:db:a2:59:07:f1(on wlan0)
+BSS 20:83:f8:72:bf:6c(on wlan0)
+BSS 9a:e8:44:85:85:a7(on wlan0)
+
+
+8. Compare “wpa_cli” and “iw” output results. Do you see the same list of available networks? If not, then explain why it differs?
+
+
+wpa_cli may exclude hidden SSIDs (networks that do not broadcast their name).
+iw can still show hidden SSIDs by displaying their BSSID without an associated SSID.
+
+
+9. Edit “wpa_supplicant.conf” file configuration:
+a. Replace the SSID name with the BSSID (select another Band if supported by the Wi-Fi AP)
+
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ sudo killall wpa_supplicant     
+
+
+┌──(kali㉿kali)-[~]
+└─$ cat /etc/wpa_supplicant/wpa_supplicant.conf    
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+country=PL
+
+network={
+        bssid=56:db:a2:58:dd:61
+        psk="iron23@#"
+        key_mgmt=WPA-PSK
+}
+    
+                                                                                                  
+10. Repeat steps 2-5.
+
+           
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -f /var/log/wpa_supplicant.log
+Successfully initialized wpa_supplicant
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ sudo wpa_cli status                                                   
+Selected interface 'wlan0'
+bssid=56:db:a2:58:dd:61
+freq=5240
+ssid=DiscoSuperStar5G
+id=0
+mode=station
+wifi_generation=6
+pairwise_cipher=CCMP
+group_cipher=CCMP
+key_mgmt=WPA2-PSK
+wpa_state=COMPLETED
+ip_address=192.168.34.11
+p2p_device_address=f0:77:c3:04:ce:fa
+address=56:23:31:eb:5f:10
+uuid=eef3d4a1-928c-5f81-adfe-5d9b2bc34a16
+ieee80211ac=1
+
+┌──(kali㉿kali)-[~]
+└─$ ip add show wlan0                                                                              
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 56:23:31:eb:5f:10 brd ff:ff:ff:ff:ff:ff permaddr f0:77:c3:04:ce:fa
+    inet 192.168.34.11/24 brd 192.168.34.255 scope global dynamic wlan0
+       valid_lft 82626sec preferred_lft 82626sec
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ sudo dhclient -r wlan0
+Killed old client process
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ ip add show wlan0     
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 56:23:31:eb:5f:10 brd ff:ff:ff:ff:ff:ff permaddr f0:77:c3:04:ce:fa
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ sudo dhclient wlan0                                                   
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ ip add show wlan0  
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 56:23:31:eb:5f:10 brd ff:ff:ff:ff:ff:ff permaddr f0:77:c3:04:ce:fa
+    inet 192.168.34.11/24 brd 192.168.34.255 scope global dynamic wlan0
+       valid_lft 86397sec preferred_lft 86397sec
+                                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ ping -c 4 google.com                                                      
+PING google.com (142.250.203.206) 56(84) bytes of data.
+64 bytes from waw02s22-in-f14.1e100.net (142.250.203.206): icmp_seq=1 ttl=117 time=8.58 ms
+64 bytes from waw02s22-in-f14.1e100.net (142.250.203.206): icmp_seq=2 ttl=117 time=12.9 ms
+64 bytes from waw02s22-in-f14.1e100.net (142.250.203.206): icmp_seq=3 ttl=117 time=11.4 ms
+64 bytes from waw02s22-in-f14.1e100.net (142.250.203.206): icmp_seq=4 ttl=117 time=11.4 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+rtt min/avg/max/mdev = 8.580/11.092/12.928/1.574 ms
+
+
+┌──(kali㉿kali)-[~]
+└─$ sudo killall wpa_supplicant                                                                              
+                                                                                                                   
+                                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ sudo cat /var/log/wpa_supplicant.log 
+Successfully initialized wpa_supplicant
+wlan0: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=PL
+wlan0: SME: Trying to authenticate with 56:db:a2:58:dd:61 (SSID='DiscoSuperStar5G' freq=5240 MHz)
+wlan0: CTRL-EVENT-REGDOM-CHANGE init=DRIVER type=COUNTRY alpha2=PL
+wlan0: Trying to associate with 56:db:a2:58:dd:61 (SSID='DiscoSuperStar5G' freq=5240 MHz)
+wlan0: Associated with 56:db:a2:58:dd:61
+wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+wlan0: WPA: Key negotiation completed with 56:db:a2:58:dd:61 [PTK=CCMP GTK=CCMP]
+wlan0: CTRL-EVENT-CONNECTED - Connection to 56:db:a2:58:dd:61 completed [id=0 id_str=]
+
+
+11. Save the results for each point list to the log file and share it with the recruiter.

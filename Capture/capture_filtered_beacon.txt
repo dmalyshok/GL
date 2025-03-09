@@ -1,0 +1,1781 @@
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.178105       Fibrain_58:e0:d1      Broadcast             802.11   486    Beacon frame, SN=2869, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0d0e85"
+
+Frame 5: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    Source address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    BSS Id: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    .... .... .... 0000 = Fragment number: 0
+    1011 0011 0101 .... = Sequence number: 2869
+    Frame check sequence: 0xa352bbfd [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.588509       Fibrain_58:e0:d1      Broadcast             802.11   486    Beacon frame, SN=2873, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0d0e85"
+
+Frame 6: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    Source address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    BSS Id: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    .... .... .... 0000 = Fragment number: 0
+    1011 0011 1001 .... = Sequence number: 2873
+    Frame check sequence: 0x3f263d7d [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.636492       Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1738, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 7: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0110 1100 1010 .... = Sequence number: 1738
+    Frame check sequence: 0x32110faa [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.786166       Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=457, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 8: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0001 1100 1001 .... = Sequence number: 457
+    Frame check sequence: 0x7f427317 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 1.888121       Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3288, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 13: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1100 1101 1000 .... = Sequence number: 3288
+    Frame check sequence: 0x1eb39f5d [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 3.453399       Fibrain_58:e0:d1      Broadcast             802.11   486    Beacon frame, SN=2901, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0d0e85"
+
+Frame 23: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    Source address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    BSS Id: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    .... .... .... 0000 = Fragment number: 0
+    1011 0101 0101 .... = Sequence number: 2901
+    Frame check sequence: 0xb6ae9176 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 3.708804       Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1768, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 28: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0110 1110 1000 .... = Sequence number: 1768
+    Frame check sequence: 0x56ccf8ea [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    107 5.668022       Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=2931, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 107: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1011 0111 0011 .... = Sequence number: 2931
+    Frame check sequence: 0xbedf1749 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    108 5.687967       ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=3830, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 108: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1110 1111 0110 .... = Sequence number: 3830
+    Frame check sequence: 0x1174e14d [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    109 5.906297       Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=507, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 109: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0001 1111 1011 .... = Sequence number: 507
+    Frame check sequence: 0xdcecc4c7 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    110 5.987944       56:db:a2:18:dd:61     Broadcast             802.11   435    Beacon frame, SN=3325, FN=0, Flags=........C, BI=100, SSID="gl_wpa3"
+
+Frame 110: 435 bytes on wire (3480 bits), 435 bytes captured (3480 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: 56:db:a2:18:dd:61 (56:db:a2:18:dd:61)
+    Source address: 56:db:a2:18:dd:61 (56:db:a2:18:dd:61)
+    BSS Id: 56:db:a2:18:dd:61 (56:db:a2:18:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1100 1111 1101 .... = Sequence number: 3325
+    Frame check sequence: 0x40cd55e4 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    125 6.291238       Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3331, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 125: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 0000 0011 .... = Sequence number: 3331
+    Frame check sequence: 0x36fc8a21 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    126 6.302230       ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=3836, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 126: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1110 1111 1100 .... = Sequence number: 3836
+    Frame check sequence: 0x2c160bdb [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    127 6.321985       Fibrain_58:e0:d1      Broadcast             802.11   486    Beacon frame, SN=2929, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0d0e85"
+
+Frame 127: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    Source address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    BSS Id: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    .... .... .... 0000 = Fragment number: 0
+    1011 0111 0001 .... = Sequence number: 2929
+    Frame check sequence: 0x69dd7931 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    129 6.371022       Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1794, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 129: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0000 0010 .... = Sequence number: 1794
+    Frame check sequence: 0x8476a775 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    166 6.905612       Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3337, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 166: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 0000 1001 .... = Sequence number: 3337
+    Frame check sequence: 0xf2fe7960 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    180 8.369671       Fibrain_58:e0:d1      Broadcast             802.11   486    Beacon frame, SN=2949, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0d0e85"
+
+Frame 180: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    Source address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    BSS Id: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1000 0101 .... = Sequence number: 2949
+    Frame check sequence: 0xfe923bc5 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    182 8.434871       Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=2958, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 182: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1000 1110 .... = Sequence number: 2958
+    Frame check sequence: 0x45d494e7 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    184 8.461087       Fibrain_58:df:89      Broadcast             802.11   486    Beacon frame, SN=2941, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-88fd85"
+
+Frame 184: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    Source address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    BSS Id: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    .... .... .... 0000 = Fragment number: 0
+    1011 0111 1101 .... = Sequence number: 2941
+    Frame check sequence: 0x5610796e [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    187 8.738110       Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=2961, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 187: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1001 0001 .... = Sequence number: 2961
+    Frame check sequence: 0xd6701fc2 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    191 8.876002       Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=536, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 191: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 0001 1000 .... = Sequence number: 536
+    Frame check sequence: 0x5b930f02 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    198 8.953837       Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3357, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 198: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 0001 1101 .... = Sequence number: 3357
+    Frame check sequence: 0xacbd18af [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    236 9.545205       Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1825, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 236: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0010 0001 .... = Sequence number: 1825
+    Frame check sequence: 0x680eada5 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    327 10.313154      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=550, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 327: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 0010 0110 .... = Sequence number: 550
+    Frame check sequence: 0x9950f6ce [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    361 10.774461      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1837, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 361: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0010 1101 .... = Sequence number: 1837
+    Frame check sequence: 0x8c3756a8 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    389 11.225780      Fibrain_58:df:89      Broadcast             802.11   486    Beacon frame, SN=2968, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-88fd85"
+
+Frame 389: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    Source address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    BSS Id: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1001 1000 .... = Sequence number: 2968
+    Frame check sequence: 0x34582549 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    390 11.319915      ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=3886, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 390: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1111 0010 1110 .... = Sequence number: 3886
+    Frame check sequence: 0x5845d57c [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    409 12.515087      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1854, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 409: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0011 1110 .... = Sequence number: 1854
+    Frame check sequence: 0xafa9a855 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    411 12.752720      ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=3900, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 411: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1111 0011 1100 .... = Sequence number: 3900
+    Frame check sequence: 0x96285613 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    417 13.152104      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3398, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 417: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 0100 0110 .... = Sequence number: 3398
+    Frame check sequence: 0xcdbef9c6 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    418 13.183425      Fibrain_58:e0:d1      Broadcast             802.11   486    Beacon frame, SN=2996, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0d0e85"
+
+Frame 418: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    Source address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    BSS Id: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1011 0100 .... = Sequence number: 2996
+    Frame check sequence: 0x69aaae62 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    423 13.641306      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1865, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 423: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0100 1001 .... = Sequence number: 1865
+    Frame check sequence: 0x147f4db4 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    424 13.755435      Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=3010, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 424: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1100 0010 .... = Sequence number: 3010
+    Frame check sequence: 0xbe03cb70 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    426 14.051102      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1869, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 426: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0100 1101 .... = Sequence number: 1869
+    Frame check sequence: 0xb263cf90 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    430 14.358446      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1872, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 430: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0101 0000 .... = Sequence number: 1872
+    Frame check sequence: 0xd78cedd5 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    431 14.460845      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1873, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 431: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0101 0001 .... = Sequence number: 1873
+    Frame check sequence: 0x0f5d44fb [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    446 14.624208      TCTmobile_0a:03:a2    Broadcast             802.11   375    Beacon frame, SN=875, FN=0, Flags=........C, BI=100, SSID="TCL-03A2"
+
+Frame 446: 375 bytes on wire (3000 bits), 375 bytes captured (3000 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: TCTmobile_0a:03:a2 (3c:ef:42:0a:03:a2)
+    Source address: TCTmobile_0a:03:a2 (3c:ef:42:0a:03:a2)
+    BSS Id: TCTmobile_0a:03:a2 (3c:ef:42:0a:03:a2)
+    .... .... .... 0000 = Fragment number: 0
+    0011 0110 1011 .... = Sequence number: 875
+    Frame check sequence: 0x21701f1c [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    458 14.917525      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=595, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 458: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 0101 0011 .... = Sequence number: 595
+    Frame check sequence: 0x028d8e25 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    666 15.531785      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=601, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 666: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 0101 1001 .... = Sequence number: 601
+    Frame check sequence: 0x74be5717 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    667 15.814327      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3424, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 667: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 0110 0000 .... = Sequence number: 3424
+    Frame check sequence: 0x7e285b69 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    668 16.008271      Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=3032, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 668: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1101 1000 .... = Sequence number: 3032
+    Frame check sequence: 0x0a68513c [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    671 16.406154      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1892, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 671: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0110 0100 .... = Sequence number: 1892
+    Frame check sequence: 0xed0011e6 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    672 16.448143      Fibrain_58:df:89      Broadcast             802.11   486    Beacon frame, SN=3019, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-88fd85"
+
+Frame 672: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    Source address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    BSS Id: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1100 1011 .... = Sequence number: 3019
+    Frame check sequence: 0xa95ce5a0 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    673 16.555798      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=611, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 673: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 0110 0011 .... = Sequence number: 611
+    Frame check sequence: 0xab397d38 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    677 17.247975      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3438, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 677: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 0110 1110 .... = Sequence number: 3438
+    Frame check sequence: 0xde37fd6c [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    691 17.464107      ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=3947, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 691: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1111 0110 1011 .... = Sequence number: 3947
+    Frame check sequence: 0x39885993 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    695 17.669031      ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=3949, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 695: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1111 0110 1101 .... = Sequence number: 3949
+    Frame check sequence: 0x45266faf [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    710 17.975880      ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=3952, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 710: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1111 0111 0000 .... = Sequence number: 3952
+    Frame check sequence: 0x5c2f1e26 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    713 18.291148      Fibrain_58:df:89      Broadcast             802.11   486    Beacon frame, SN=3037, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-88fd85"
+
+Frame 713: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    Source address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    BSS Id: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1101 1101 .... = Sequence number: 3037
+    Frame check sequence: 0x85d59e08 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    714 18.352042      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1911, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 714: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 0111 0111 .... = Sequence number: 1911
+    Frame check sequence: 0x9aea0eca [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    809 20.037510      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=645, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 809: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 1000 0101 .... = Sequence number: 645
+    Frame check sequence: 0x4a0853af [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    839 20.346699      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=648, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 839: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 1000 1000 .... = Sequence number: 648
+    Frame check sequence: 0x4ac59705 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    840 20.351033      Fibrain_58:e0:d1      Broadcast             802.11   486    Beacon frame, SN=3066, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0d0e85"
+
+Frame 840: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    Source address: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    BSS Id: Fibrain_58:e0:d1 (54:db:a2:58:e0:d1)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1111 1010 .... = Sequence number: 3066
+    Frame check sequence: 0x70f3bc12 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    843 20.442179      Fibrain_58:df:89      Broadcast             802.11   486    Beacon frame, SN=3058, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-88fd85"
+
+Frame 843: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    Source address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    BSS Id: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    .... .... .... 0000 = Fragment number: 0
+    1011 1111 0010 .... = Sequence number: 3058
+    Frame check sequence: 0x18d16464 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    864 21.231050      Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=3083, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 864: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1100 0000 1011 .... = Sequence number: 3083
+    Frame check sequence: 0x76f17d73 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    866 21.355190      ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=3985, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 866: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1111 1001 0001 .... = Sequence number: 3985
+    Frame check sequence: 0x1a963768 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    871 21.530066      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1942, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 871: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 1001 0110 .... = Sequence number: 1942
+    Frame check sequence: 0xe39f668f [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    908 22.700022      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=671, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 908: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 1001 1111 .... = Sequence number: 671
+    Frame check sequence: 0x523f5679 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    909 22.880359      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3493, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 909: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 1010 0101 .... = Sequence number: 3493
+    Frame check sequence: 0x059fd3a3 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    910 23.007267      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=674, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 910: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 1010 0010 .... = Sequence number: 674
+    Frame check sequence: 0x3eb02ae6 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    911 23.062579      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=1957, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 911: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 1010 0101 .... = Sequence number: 1957
+    Frame check sequence: 0x6ef4a69b [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    912 23.279003      Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=3103, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 912: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1100 0001 1111 .... = Sequence number: 3103
+    Frame check sequence: 0x327267bf [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    928 24.211512      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3506, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 928: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 1011 0010 .... = Sequence number: 3506
+    Frame check sequence: 0x8ed4ce1c [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    938 24.522522      56:db:a2:18:dd:61     Broadcast             802.11   435    Beacon frame, SN=3506, FN=0, Flags=........C, BI=100, SSID="gl_wpa3"
+
+Frame 938: 435 bytes on wire (3480 bits), 435 bytes captured (3480 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: 56:db:a2:18:dd:61 (56:db:a2:18:dd:61)
+    Source address: 56:db:a2:18:dd:61 (56:db:a2:18:dd:61)
+    BSS Id: 56:db:a2:18:dd:61 (56:db:a2:18:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 1011 0010 .... = Sequence number: 3506
+    Frame check sequence: 0x60878964 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    952 24.734568      ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=4021, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 952: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1111 1011 0101 .... = Sequence number: 4021
+    Frame check sequence: 0xdffad70b [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    954 25.068989      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=694, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 954: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 1011 0110 .... = Sequence number: 694
+    Frame check sequence: 0xb9bf1857 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    963 26.555943      Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=3135, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 963: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1100 0011 1111 .... = Sequence number: 3135
+    Frame check sequence: 0xe0fbffe5 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    967 26.771624      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3531, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 967: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 1100 1011 .... = Sequence number: 3531
+    Frame check sequence: 0xfd6c6fb4 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    969 26.987840      ADBItalia_af:bd:cc    Broadcast             802.11   312    Beacon frame, SN=4044, FN=0, Flags=........C, BI=100, SSID="NETIASPOT-2.4GHz-AFBDC9"
+
+Frame 969: 312 bytes on wire (2496 bits), 312 bytes captured (2496 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    Source address: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    BSS Id: ADBItalia_af:bd:cc (10:5a:f7:af:bd:cc)
+    .... .... .... 0000 = Fragment number: 0
+    1111 1100 1100 .... = Sequence number: 4044
+    Frame check sequence: 0x7ce4d9e6 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    970 27.385588      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3537, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 970: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 1101 0001 .... = Sequence number: 3537
+    Frame check sequence: 0x8e1c95d6 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    984 27.731092      TCTmobile_0a:03:a2    Broadcast             802.11   375    Beacon frame, SN=1017, FN=0, Flags=........C, BI=100, SSID="TCL-03A2"
+
+Frame 984: 375 bytes on wire (3000 bits), 375 bytes captured (3000 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: TCTmobile_0a:03:a2 (3c:ef:42:0a:03:a2)
+    Source address: TCTmobile_0a:03:a2 (3c:ef:42:0a:03:a2)
+    BSS Id: TCTmobile_0a:03:a2 (3c:ef:42:0a:03:a2)
+    .... .... .... 0000 = Fragment number: 0
+    0011 1111 1001 .... = Sequence number: 1017
+    Frame check sequence: 0x2bb329d2 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+    986 28.028262      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=723, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 986: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 1101 0011 .... = Sequence number: 723
+    Frame check sequence: 0x377a5200 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1014 28.387438      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=2009, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 1014: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 1101 1001 .... = Sequence number: 2009
+    Frame check sequence: 0x76edd71c [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1019 29.103925      Fibrain_58:d7:91      Broadcast             802.11   486    Beacon frame, SN=2016, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-097d85"
+
+Frame 1019: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    Source address: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    BSS Id: Fibrain_58:d7:91 (54:db:a2:58:d7:91)
+    .... .... .... 0000 = Fragment number: 0
+    0111 1110 0000 .... = Sequence number: 2016
+    Frame check sequence: 0x94f45652 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1020 29.355697      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=736, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 1020: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 1110 0000 .... = Sequence number: 736
+    Frame check sequence: 0xdc55dd0c [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1049 29.638435      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3559, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 1049: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 1110 0111 .... = Sequence number: 3559
+    Frame check sequence: 0x859ec264 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1089 30.153194      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3564, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 1089: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 1110 1100 .... = Sequence number: 3564
+    Frame check sequence: 0x71610608 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1093 30.252892      Fibrain_58:dd:61      Broadcast             802.11   483    Beacon frame, SN=3565, FN=0, Flags=........C, BI=100, SSID="DiscoSuperStar"
+
+Frame 1093: 483 bytes on wire (3864 bits), 483 bytes captured (3864 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    Source address: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    BSS Id: Fibrain_58:dd:61 (54:db:a2:58:dd:61)
+    .... .... .... 0000 = Fragment number: 0
+    1101 1110 1101 .... = Sequence number: 3565
+    Frame check sequence: 0xd01fef24 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1094 30.344474      Fibrain_58:c3:f9      Broadcast             802.11   486    Beacon frame, SN=3172, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-8f3c85"
+
+Frame 1094: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    Source address: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    BSS Id: Fibrain_58:c3:f9 (54:db:a2:58:c3:f9)
+    .... .... .... 0000 = Fragment number: 0
+    1100 0110 0100 .... = Sequence number: 3172
+    Frame check sequence: 0x434ad783 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1125 31.301495      Fibrain_58:dc:f1      Broadcast             802.11   486    Beacon frame, SN=755, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-0fcd85"
+
+Frame 1125: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    Source address: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    BSS Id: Fibrain_58:dc:f1 (54:db:a2:58:dc:f1)
+    .... .... .... 0000 = Fragment number: 0
+    0010 1111 0011 .... = Sequence number: 755
+    Frame check sequence: 0x48df3708 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
+
+No.     Time           Source                Destination           Protocol Length Info
+   1129 31.398809      Fibrain_58:df:89      Broadcast             802.11   486    Beacon frame, SN=3165, FN=0, Flags=........C, BI=100, SSID="HALNy-2.4G-88fd85"
+
+Frame 1129: 486 bytes on wire (3888 bits), 486 bytes captured (3888 bits)
+Radiotap Header v0, Length 56
+802.11 radio information
+IEEE 802.11 Beacon frame, Flags: ........C
+    Type/Subtype: Beacon frame (0x0008)
+    Frame Control Field: 0x8000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    Source address: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    BSS Id: Fibrain_58:df:89 (54:db:a2:58:df:89)
+    .... .... .... 0000 = Fragment number: 0
+    1100 0101 1101 .... = Sequence number: 3165
+    Frame check sequence: 0x233d7042 [unverified]
+    [FCS Status: Unverified]
+    [WLAN Flags: ........C]
+IEEE 802.11 Wireless Management
